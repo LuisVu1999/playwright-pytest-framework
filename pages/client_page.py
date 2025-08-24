@@ -69,6 +69,7 @@ class ClientPage(BasePage):
         self.click(self.CLICK_COMPANY_NAME)
         self.click(self.DELETE_BUTTON)
         self.click(self.CONFIRM_DELETE)
+        self.wait_thread_sleep(2)
         
     def edit_client(self, company_modified: str):
         self.click(self.CLICK_COMPANY_NAME)
