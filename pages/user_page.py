@@ -105,5 +105,6 @@ class UserPage(BasePage):
         self.click(self.CONFIRM_DELETE)
 
     def search_user(self, company_name : str):
+        self.access_user()
         self.fill(self.SEARCH, company_name)
         self.wait_thread_sleep(2)
