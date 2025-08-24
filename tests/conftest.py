@@ -14,7 +14,7 @@ def browser(playwright_instance):
     yield browser
     browser.close()
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def page(browser):
     context = browser.new_context()
     page = context.new_page()
