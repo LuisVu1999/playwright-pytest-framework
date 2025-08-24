@@ -1,4 +1,4 @@
-from playwright.async_api import Page
+from playwright.sync_api import Page
 import time
 
 class BasePage:
@@ -9,13 +9,13 @@ class BasePage:
         self.page.goto(url)
         
     def click(self, locator: str):
-        self.page.locator(locator).click()
+        self.page.click(locator)
 
     def fill(self, locator: str, text: str):
-        self.page.locator(locator).fill(text)
+        self.page.fill(locator, text)
 
     def is_visible(self, locator: str) -> bool:
-        return self.page.locator(locator).is_visible()
+        return self.page.is_visible(locator)
     
     def wait_thread_sleep(self, seconds: float):
         time.sleep(seconds)
@@ -27,8 +27,8 @@ class BasePage:
         self.page.keyboard.press(key)
 
     def assert_text (self, locator: str, expected_result: str, message = ""):
-        actual_result = self.page.locator(locator).inner_text()
+        actual_result = self.page.inner_text(locator)
         assert actual_result == expected_result, (message or f"Text mismatch. Expected: '{expected_result}', but got: '{actual_result}'")
 
     def assert_visible(self, locator: str, message = ""):
-        assert self.page.locator(locator).is_visible(), message or f"Element '{locator}' not visible"
+        assert self.page.is_visible(locator), message or f"Element '{locator}' not visible"
