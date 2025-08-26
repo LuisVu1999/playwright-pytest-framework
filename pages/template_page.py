@@ -57,6 +57,8 @@ class TemplatePage(BasePage):
 
     DASHBOARD = "//i[@class='ti-home']"
 
+    REQUEST_SUCCESSFULL_MESSAGE = "//div[@class='noty_message']"
+
     def __init__(self, page):
         super().__init__(page)
 
@@ -85,6 +87,7 @@ class TemplatePage(BasePage):
         self.fill(self.ESTIMATED_HOUR, estimated_hour)
         self.fill(self.ESTIMATED_COSTS, estimated_cost)
         self.click(self.SUBMIT_BUTTON)
+        self.wait_for_load_page()
 
     def view_template(self, details_tab: str, task_tab: str, milestones_tab: str, testing: str, 
                       development: str, planning: str, design: str, uncategoried: str, file_tab: str):
@@ -109,8 +112,11 @@ class TemplatePage(BasePage):
         self.click(self.EDIT_BUTTON)
         self.click(self.ENABLE_USER_PERMISSION)
         self.click(self.SUBMIT_BUTTON)
+        self.wait_for_load_page()
 
     def delete_template(self):
         self.click(self.CLICK_CUSTOM_TEMPLATE_NAME)
         self.click(self.DELETE_BUTTON)
         self.click(self.CONFIRM_DELETE)
+        self.wait_for_load_page()
+        self.wait_thread_sleep(2)

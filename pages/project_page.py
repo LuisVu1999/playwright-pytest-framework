@@ -46,11 +46,14 @@ class ProjectPage(BasePage):
     # Edit Project
     EDIT_BUTTON = "//button[@data-modal-title='Edit Project']"
 
+    REQUEST_SUCCESSFULL_MESSAGE = "//div[@class='noty_message']"
+
     def __init__(self, page):
         super().__init__(page)
     
     def create_project(self, company_name: str, first_name: str, last_name: str, email: str, project_title: str, 
                        start_date: str, deadline_date: str, target_value: int):
+        self.wait_for_load_page()
         self.click(self.CREATE_BUTTON)
         self.click(self.NEW_CLIENT)
         self.fill(self.COMPANY_NAME, company_name)
@@ -68,9 +71,11 @@ class ProjectPage(BasePage):
         self.click(self.CHECK_MANUALLY)
         self.drag_slider_with_keys(self.SLIDER, target_value)
         self.click(self.SUBMIT_BUTTON)
+        self.wait_for_load_page()
 
     def view_project(self, manually_process: str, progress: str, company_name: str, expected_avt: str, expected_avt_tooltip: str, start_date: str, due_date: str):
         self.click(self.CLICK_PROJECT_NAME)
+        self.wait_for_load_page()
         self.assert_text(self.VIEW_MANUALLY_PROGRESS, manually_process, "view manual process")
         self.assert_text(self.VIEW_PROGRESS_TEXT, progress, "view process")
         self.assert_text(self.VIEW_COMPANY_NAME, company_name, "view company name")
@@ -81,24 +86,33 @@ class ProjectPage(BasePage):
         self.assert_text(self.VIEW_DUE_DATE, due_date, "view due date")
 
     def edit_project(self, project_title_modified: str, start_date_modified: str, deadline_date_modified: str):
+        self.wait_for_load_page()
         self.click(self.EDIT_BUTTON)
+        self.wait_for_load_page()
         self.fill(self.PROJECT_TITLE, project_title_modified)
         self.type_text(self.START_DATE, start_date_modified)
         self.keyboard("Enter")
         self.type_text(self.DEADLINE_DATE, deadline_date_modified)
         self.keyboard("Enter")
         self.click(self.SUBMIT_BUTTON)
+        self.wait_for_load_page()
 
     def delete_project(self):
+        self.wait_for_load_page()
         self.click(self.DELETE_BUTTON)
         self.click(self.CONFIRM_DELETE_BUTTON)
+        self.wait_for_load_page()
+        self.wait_thread_sleep(2)
 
     def access_project(self):
+        self.wait_for_load_page()
         self.click(self.DASHBOARD)
         self.click(self.PROJECT_MAIN)
         self.click(self.PROJECT_SUB)
 
     def search_project(self, project_name: str):
+        self.wait_for_load_page()
         self.access_project()
+        self.wait_for_load_page()
         self.fill(self.SEARCH_PROJECT, project_name)
-        self.wait_thread_sleep(2)
+        self.wait_thread_sleep(4)
