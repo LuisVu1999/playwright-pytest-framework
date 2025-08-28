@@ -15,7 +15,7 @@ jobs:
       # 2️⃣ Cấu hình git và test push
       - name: Test push permission
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # dùng token có quyền push
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # dùng token có quyền push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
