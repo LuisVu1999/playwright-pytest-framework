@@ -1,73 +1,77 @@
 name: Playwright Tests
+
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+
 jobs:
-  test:
+  test: # job 1
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install allure-pytest
-        python -m pip install playwright pytest-playwright
-        python -m playwright install --with-deps
-    - name: Ensure browsers are installed
-      run: python -m playwright install --with-deps
-    - name: Run tests (generate allure-results)
-      run: |
-          pytest -v --alluredir=allure-results
-    - name: Upload allure results artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: allure-results
-        path: allure-results
-    
-    allure-report:
-    needs: tests
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install allure-pytest
+          python -m pip install playwright pytest-playwright
+          python -m playwright install --with-deps
+
+      - name: Ensure browsers are installed
+        run: python -m playwright install --with-deps
+
+      - name: Run tests (generate allure-results)
+        run: pytest -v --alluredir=allure-results
+
+      - name: Upload allure results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
+
+  allure-report: # job 2, chạy sau khi test xong
+    needs: test   # chờ job "test" chạy xong
     runs-on: ubuntu-latest
-
     steps:
-    - name: Download allure results
-      uses: actions/download-artifact@v4
-      with:
-        name: allure-results
-        path: allure-results
+      - name: Download allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
 
-    # Giữ lịch sử để có biểu đồ trend
-    - name: Checkout gh-pages history
-      uses: actions/checkout@v4
-      with:
-        ref: gh-pages
-        path: gh-pages
-      continue-on-error: true
+      - name: Checkout gh-pages history
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+        continue-on-error: true
 
-    - name: Copy history (nếu có)
-      run: |
-        mkdir -p allure-results/history
-        if [ -d gh-pages/history ]; then
-          cp -r gh-pages/history allure-results/ || true
-        fi
+      - name: Copy history (nếu có)
+        run: |
+          mkdir -p allure-results/history
+          if [ -d gh-pages/history ]; then
+            cp -r gh-pages/history allure-results/ || true
+          fi
 
-    - name: Generate Allure Report
-      uses: simple-elf/allure-report-action@v1.7
-      with:
-        allure_results: allure-results
-        allure_history: allure-history
-        keep_reports: 20
+      - name: Generate Allure Report
+        uses: simple-elf/allure-report-action@v1.7
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
 
-    - name: Publish to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: gh-pages
-        publish_dir: allure-history
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
