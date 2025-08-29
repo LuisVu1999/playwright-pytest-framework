@@ -1,4 +1,4 @@
-name: Deploy Allure Report
+name: Deploy Allure Report ttt
 
 on:
   push:
