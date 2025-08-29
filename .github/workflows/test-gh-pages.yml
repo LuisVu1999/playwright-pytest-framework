@@ -1,25 +1,27 @@
-name: Test GH Pages Push Permission t
+name: Deploy Allure Report
 
 on:
   push:
-    branches: [ main ]  # khi push lên main, workflow này sẽ chạy
+    branches: [ main ]
 
 jobs:
-  test-push:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       # 1️⃣ Checkout code
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
 
-      # 2️⃣ Cấu hình git và test push
-      - name: Test push permission
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # dùng token có quyền push
+      # 2️⃣ Build Allure report (ví dụ bạn generate sẵn ra thư mục ./allure-report)
+      - name: Generate Allure Report
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          echo "test" > test.txt
-          git add test.txt
-          git commit -m "Test push permission"
-          git push origin gh-pages
+          mkdir -p allure-report
+          echo "<html><body><h1>Test Report</h1></body></html>" > allure-report/index.html
+
+      # 3️⃣ Deploy lên gh-pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
