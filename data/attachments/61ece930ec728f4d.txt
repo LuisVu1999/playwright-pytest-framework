@@ -1,0 +1,7 @@
+Fill successfully #email
+Fill successfully #email
+Fill successfully #password
+Fill successfully #password
+Click successfully #loginSubmitButton
+Click successfully //li[@class='nav-item dropdown u-pro']//a[@data-toggle='dropdown']
+Click successfully //a[@href='/logout']

@@ -1,0 +1,40 @@
+Fill successfully #email
+Fill successfully #email
+Fill successfully #password
+Fill successfully #password
+Click successfully #loginSubmitButton
+Click successfully //i[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully //a[@href='https://demo.growcrm.io/templates/projects']
+Click successfully //button[@data-modal-title='Create A Project Template']
+Fill successfully #project_title
+Click successfully //span[@aria-labelledby='select2-project_categoryid-container']
+Click successfully //li[contains(text(),'App Development')]
+Click successfully (//span[@class='lever switch-col-light-blue'])[2]
+Click successfully //label[@for='assignedperm_tasks_collaborate']
+Click successfully (//span[@class='lever switch-col-light-blue'])[3]
+Click successfully //label[@for='clientperm_tasks_view']
+Click successfully //label[@for='clientperm_tasks_collaborate']
+Click successfully //label[@for='clientperm_tasks_create']
+Click successfully //label[@for='clientperm_timesheets_view']
+Click successfully //label[@for='clientperm_expenses_view']
+Click successfully (//span[@class='lever switch-col-light-blue'])[4]
+Fill successfully #project_billing_rate
+Click successfully //span[@aria-labelledby='select2-project_billing_type-container']
+Click successfully //li[contains(text(),'Fixed Fee')]
+Fill successfully #project_billing_estimated_hours
+Fill successfully #project_billing_costs_estimate
+Click successfully #commonModalSubmitButton
+Click successfully //i[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully //a[@href='https://demo.growcrm.io/templates/projects']
+Click successfully //a[contains(text(),'Luis template')]
+Click successfully //button[@data-modal-title='Edit Project Template']
+Click successfully (//span[@class='lever switch-col-light-blue'])[2]
+Click successfully #commonModalSubmitButton
+Click successfully //i[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully //a[@href='https://demo.growcrm.io/templates/projects']
+Click successfully //a[contains(text(),'Luis template')]
+Click successfully //button[@data-confirm-title='Delete Template']
+Click successfully //button[@class='btn btn-sm btn-outline-danger']
