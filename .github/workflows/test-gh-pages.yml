@@ -1,4 +1,4 @@
-name: Test GH Pages Push Permission
+name: Test GH Pages Push Permission t
 
 on:
   push:
