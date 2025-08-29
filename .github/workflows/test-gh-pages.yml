@@ -7,6 +7,9 @@ on:
 jobs:
   test-push:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # cấp quyền ghi cho GITHUB_TOKEN
+
     steps:
       # 1️⃣ Checkout code
       - name: Checkout repository
@@ -14,12 +17,10 @@ jobs:
 
       # 2️⃣ Cấu hình git và test push
       - name: Test push permission
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # dùng token có quyền push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          echo "test" > test.txt
+          echo "test $(date)" > test.txt
           git add test.txt
-          git commit -m "Test push permission"
-          git push origin gh-pages
+          git commit -m "Test push permission" || echo "No changes to commit"
+          git push origin HEAD:gh-pages --force
