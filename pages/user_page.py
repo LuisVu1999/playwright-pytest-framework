@@ -45,13 +45,13 @@ class UserPage(BasePage):
         super().__init__(page)
 
     def access_user(self):
+        self.wait_for_load_page()
         self.click(self.DASHBOARD)
         self.click(self.CUSTOMER)
         self.click(self.CLIENT)
 
     def create_user(self, company_name : str, first_name : str, last_name : str, 
                     user_email : str, user_phone : str, user_position : str, ):
-        self.wait_for_load_page()
         self.click(self.CREATE_USER)
         self.click(self.CLICK_COMPANY)
         self.fill(self.SEARCH_COMPANY, company_name)
@@ -70,7 +70,6 @@ class UserPage(BasePage):
     def view_user(self, expected_name: str, expected_email: str, expected_user_text: str, 
                   expected_phone: str, expected_job_title: str, expected_last_seen: str):
         self.click(self.CLICK_USER)
-        self.wait_for_load_page()
         current_date = datetime.now().strftime("%m-%d-%Y")
         print(f"Expected: '{current_date}'")
         actual = self.page.locator(self.VIEW_LAST_SEEN).inner_text()
@@ -87,7 +86,6 @@ class UserPage(BasePage):
 
     def edit_user(self, first_name_modified: str, last_name_modified: str, email_modified: str, 
                   phone_modified: str, position_modified: str, twitter_url: str):
-        self.wait_for_load_page()
         self.click(self.EDIT_BUTTON)
         self.fill(self.FIRST_NAME, first_name_modified)
         self.fill(self.LAST_NAME, last_name_modified)
@@ -106,15 +104,12 @@ class UserPage(BasePage):
         self.wait_for_load_page()
 
     def delete_user(self):
-        self.wait_for_load_page()
         self.click(self.DELETE_BUTTON)
         self.click(self.CONFIRM_DELETE)
         self.wait_for_load_page()
         self.wait_thread_sleep(2)
 
     def search_user(self, company_name : str):
-        self.wait_for_load_page()
         self.access_user()
-        self.wait_for_load_page()
         self.fill(self.SEARCH, company_name)
         self.wait_thread_sleep(4)

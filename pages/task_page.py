@@ -106,11 +106,11 @@ class TaskPage (BasePage):
         super().__init__(page)
 
     def access_task(self):
+        self.wait_for_load_page()
         self.click(self.DASHBOARD)
         self.click(self.CLICK_TASKS)
 
     def create_task(self, project_name: str, task_title: str, word_count: str, image_count: str, text: str, date: str):
-        self.wait_for_load_page()
         self.click(self.CREATE_BUTTON)
         self.click(self.CLICK_PROJECT)
         self.fill(self.ENTER_PROJECT, project_name)
@@ -143,7 +143,6 @@ class TaskPage (BasePage):
     def view_task(self, task_name_tag: str, priority_tag: str, project_tag: str, client_tag: str, 
                   assigned_user_tag_1: str, assigned_user_tag_2: str, view_task_name: str, view_project_name: str, view_status: str, 
                   view_priority: str, view_created_by: str):
-        self.wait_for_load_page()
         self.assert_text_contain(self.TASK_NAME_TAG, task_name_tag, "View task name list")
         self.assert_text(self.PRIORITY_TAG, priority_tag, "View priority list")
         self.assert_attribute(self.PROJECT_TAG, "title", project_tag, "View project list")
@@ -161,7 +160,6 @@ class TaskPage (BasePage):
         self.click(self.CLOSE_BUTTON)
 
     def delete_task(self):
-        self.wait_for_load_page()
         self.click(self.MORE_ACTION)
         self.click(self.DELETE_BUTTON)
         self.click(self.CONFIRM_DELETE)
@@ -169,21 +167,17 @@ class TaskPage (BasePage):
         self.wait_thread_sleep(2)
 
     def archive_task(self):
-        self.wait_for_load_page()
         self.click(self.MORE_ACTION)
         self.click(self.ARCHIVE_BUTTON)
         self.click(self.CONFIRM_ARCHIVE)
         self.wait_for_load_page()
 
     def search_task(self, task_title: str):
-        self.wait_for_load_page()
         self.access_task
-        self.wait_for_load_page()
         self.fill(self.SEARCH, task_title)
         self.wait_thread_sleep(4)
 
     def edit_task(self, task_title_modified: str, comment: str, item_name: str, ):
-        self.wait_for_load_page()
         self.click(self.TASK_NAME_TAG)
         self.click(self.CLICK_TASK_TITLE)
         self.wait_thread_sleep(1)

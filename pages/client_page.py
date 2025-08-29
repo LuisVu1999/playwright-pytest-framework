@@ -51,7 +51,6 @@ class ClientPage(BasePage):
         self.click(self.CLIENT_PAGE)
 
     def create_client(self, company: str, first_name: str, last_name: str, email: str):
-        self.wait_for_load_page()
         self.click(self.ADD_CLIENT)
         self.fill(self.COMPANY_NAME, company)
         self.fill(self.FIRST_NAME, first_name)
@@ -64,7 +63,6 @@ class ClientPage(BasePage):
 
     def view_client(self, client_page_title: str, logo: str, client_name: str, account_owner: str, view_category: str, account_status: str):
         self.click(self.CLICK_COMPANY_NAME)
-        self.wait_for_load_page()
         self.assert_text(self.CLIENT_PAGE_TITLE, client_page_title, "view client title")
         self.assert_text(self.CLIENT_LOGO, logo, "view logo")
         self.assert_text(self.CLIENT_NAME, client_name, "view client name")
@@ -73,7 +71,6 @@ class ClientPage(BasePage):
         self.assert_text(self.ACCOUNT_STATUS, account_status, "view account status")
 
     def delete_client(self):
-        self.wait_for_load_page()
         self.click(self.CLICK_COMPANY_NAME)
         self.click(self.DELETE_BUTTON)
         self.click(self.CONFIRM_DELETE)
@@ -81,7 +78,6 @@ class ClientPage(BasePage):
         self.wait_thread_sleep(2)
         
     def edit_client(self, company_modified: str):
-        self.wait_for_load_page()
         self.click(self.CLICK_COMPANY_NAME)
         self.click(self.EDIT_CLIENT_ICON)
         self.click(self.EDIT_CLIENT_BUTTON)
@@ -94,8 +90,6 @@ class ClientPage(BasePage):
         self.wait_for_load_page()
 
     def search_client(self, company_name: str):
-        self.wait_for_load_page()
         self.access_client()
-        self.wait_for_load_page
         self.fill(self.SEARCH, company_name)
         self.wait_thread_sleep(4)

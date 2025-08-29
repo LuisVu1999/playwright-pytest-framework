@@ -63,6 +63,7 @@ class TemplatePage(BasePage):
         super().__init__(page)
 
     def access_template(self):
+        self.wait_for_load_page()
         self.click(self.DASHBOARD)
         self.click(self.CLICK_PROJECT)
         self.click(self.CLICK_TEMPLATE)
@@ -87,7 +88,6 @@ class TemplatePage(BasePage):
         self.fill(self.ESTIMATED_HOUR, estimated_hour)
         self.fill(self.ESTIMATED_COSTS, estimated_cost)
         self.click(self.SUBMIT_BUTTON)
-        self.wait_for_load_page()
 
     def view_template(self, details_tab: str, task_tab: str, milestones_tab: str, testing: str, 
                       development: str, planning: str, design: str, uncategoried: str, file_tab: str):
