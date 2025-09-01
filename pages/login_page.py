@@ -15,6 +15,7 @@ class LoginPage(BasePage):
         super().__init__(page)
 
     def login(self, username: str, password: str):
+        self.navigate("https://demo.growcrm.io/login")
         self.fill(self.USERNAME_INPUT, "")
         self.fill(self.USERNAME_INPUT, username)
         self.fill(self.PASSWORD_INPUT, "")

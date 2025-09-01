@@ -1,13 +1,11 @@
-from pages.login_page import LoginPage
 from pages.project_page import ProjectPage
 from pages.client_page import ClientPage
 
-def test_edit_project(page):
-    login_page = LoginPage(page)
+def test_edit_project(auth_context):
+    page = auth_context
     project_page = ProjectPage(page)
     client_page = ClientPage(page)
 
-    login_page.login("admin@example.com","growcrm")
     project_page.access_project()
     project_page.create_project("Luis_company", "Luis_firstname", "Luis_lastname", "test_abc@abc.com", "Luis_project_title", "12-13-2024", "11-18-2026", 87)
     project_page.search_project("Luis_project_title")

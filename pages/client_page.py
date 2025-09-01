@@ -45,7 +45,6 @@ class ClientPage(BasePage):
         super().__init__(page)
 
     def access_client(self):
-        self.wait_for_load_page()
         self.click(self.DASHBOARD)
         self.click(self.CUSTOMER)
         self.click(self.CLIENT_PAGE)
