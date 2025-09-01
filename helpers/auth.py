@@ -12,7 +12,7 @@ class AuthHelper:
     def login_and_save_state():
         with sync_playwright() as p:
             # Step 1: Mở browser và login bằng UI
-            browser = p.chromium.launch(headless=False)
+            browser = p.chromium.launch(headless=True)
             context = browser.new_context()
             page = context.new_page()
             page.goto("https://demo.growcrm.io/home")  # đổi link web của bạn
