@@ -63,6 +63,7 @@ class TemplatePage(BasePage):
         super().__init__(page)
 
     def access_template(self):
+        self.wait_for_load_page()
         self.click(self.DASHBOARD)
         self.click(self.CLICK_PROJECT)
         self.click(self.CLICK_TEMPLATE)
