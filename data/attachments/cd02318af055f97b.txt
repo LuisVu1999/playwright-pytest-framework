@@ -1,3 +1,0 @@
-Click successfully //a[@data-target='login-forms-forgot']
-Fill successfully #email
-Click successfully #forgotSubmitButton
