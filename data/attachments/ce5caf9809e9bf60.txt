@@ -1,0 +1,28 @@
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Click successfully //button[@data-action-ajax-loading-target='commonModalBody']
+Click successfully //a[@class='client-type-selector']
+Fill successfully (//input[@id='client_company_name'])[1]
+Fill successfully (//input[@id='first_name'])[1]
+Fill successfully (//input[@id='last_name'])[1]
+Fill successfully (//input[@id='email'])[1]
+Click successfully //span[@aria-labelledby='select2-project_template_selector-container']
+Click successfully //li[contains(text(),'Logo Design Template')]
+Fill successfully #project_title
+Click successfully //*[@id='js-projects-modal-add-edit']/div/div[11]/div[2]/div/label/span
+Click successfully //label[@for='project_progress_manually']
+Click successfully #commonModalSubmitButton
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Fill successfully #search_query
+Click successfully //button[@data-confirm-title='Delete Item']
+Click successfully //button[@class='btn btn-sm btn-outline-danger']
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //button[@data-confirm-title='Delete Item']
+Click successfully //button[@class='btn btn-sm btn-outline-danger']

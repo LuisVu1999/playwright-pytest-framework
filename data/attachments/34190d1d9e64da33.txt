@@ -1,0 +1,29 @@
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully //a[@href='/users']
+Click successfully //button[@data-modal-title='Create A New User']
+Click successfully //span[@aria-labelledby='select2-clientid-container']
+Fill successfully //span[@class='select2-search select2-search--dropdown']//input
+Click successfully //li[contains(text(),'Dellon Inc')]
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='first_name']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='last_name']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='email']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='phone']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='position']
+Click successfully //span[@aria-labelledby='select2-timezone-container']
+Click successfully //li[contains(text(),'Asia/Ho_Chi_Minh')]
+Click successfully #commonModalSubmitButton
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully //a[@href='/users']
+Fill successfully #search_query
+Click successfully //tbody[@id='contacts-td-container']//tr[1]//td[2]
+Expected: '09-01-2025'
+Actual: '---'
+Click successfully #commonModalExtraCloseIcon
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully //a[@href='/users']
+Fill successfully #search_query
+Click successfully //button[@data-confirm-title='Delete User']
+Click successfully //button[@class='btn btn-sm btn-outline-danger']
