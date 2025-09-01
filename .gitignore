@@ -57,3 +57,7 @@ Thumbs.db
 allure-results/
 allure-report/
 allure-history/
+
+auth.json
+cookies.json
+storageState.json
