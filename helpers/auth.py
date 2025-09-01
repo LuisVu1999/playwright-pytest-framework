@@ -23,7 +23,9 @@ class AuthHelper:
             page.fill("#password", "")
             page.fill("#password", "growcrm")
             page.click("#loginSubmitButton")
+            time.sleep(3)
             page.wait_for_selector("//*[@id='topnav-logo-container']/div/a/img[2]")
+            page.wait_for_url("https://demo.growcrm.io/home", timeout=10000)
 
             # Xóa file cũ nếu có
             if os.path.exists(STORAGE_FILE):
@@ -32,7 +34,6 @@ class AuthHelper:
             # ✅ Lưu toàn bộ storage state (cookies + localStorage + sessionStorage)
             context.storage_state(path=STORAGE_FILE)
             print(f"✅ Saved to {STORAGE_FILE}")
-            time.sleep(2)
             browser.close()
 
             # Step 3: Mở browser mới, dùng lại cookies để login không cần nhập pass

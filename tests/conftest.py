@@ -23,7 +23,7 @@ STORAGE_FILE = "auth.json"
 @pytest.fixture(scope="session")
 def browser_context():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(headless=False)
         context = browser.new_context()
         yield context
         context.close()
