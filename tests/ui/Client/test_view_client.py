@@ -1,7 +1,6 @@
 from pages.client_page import ClientPage
 
-def test_view_client(auth_context):
-    page = auth_context
+def test_view_client(page):
     client_page = ClientPage(page)
     client_page.access_client()
     client_page.create_client("Luis_company_view", "Luis_firstname", "Luis_lastname", "test_abc@abc.com")

@@ -1,7 +1,6 @@
 from pages.task_page import TaskPage
 
-def test_edit_task(auth_context):
-    page = auth_context
+def test_edit_task(page):
     task_page = TaskPage(page)
 
     task_page.access_task()

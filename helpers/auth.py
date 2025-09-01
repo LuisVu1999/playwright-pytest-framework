@@ -9,6 +9,11 @@ STORAGE_FILE = "auth.json"
 
 class AuthHelper:
     @staticmethod
+    def ensure_logged_in():
+        if not os.path.exists(STORAGE_FILE):
+            AuthHelper.login_and_save_state()
+
+    @staticmethod
     def login_and_save_state():
         with sync_playwright() as p:
             # Step 1: Mở browser và login bằng UI
@@ -23,13 +28,8 @@ class AuthHelper:
             page.fill("#password", "")
             page.fill("#password", "growcrm")
             page.click("#loginSubmitButton")
-            time.sleep(5)
             #page.wait_for_selector("//*[@id='topnav-logo-container']/div/a/img[2]")
-            page.wait_for_url("https://demo.growcrm.io/home", timeout=10000)
-
-            # Xóa file cũ nếu có
-            if os.path.exists(STORAGE_FILE):
-                os.remove(STORAGE_FILE)
+            page.wait_for_url("https://demo.growcrm.io/home", timeout=15000)
 
             # ✅ Lưu toàn bộ storage state (cookies + localStorage + sessionStorage)
             context.storage_state(path=STORAGE_FILE)

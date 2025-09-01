@@ -1,8 +1,7 @@
 from pages.project_page import ProjectPage
 from pages.client_page import ClientPage
 
-def test_edit_project(auth_context):
-    page = auth_context
+def test_edit_project(page):
     project_page = ProjectPage(page)
     client_page = ClientPage(page)
 

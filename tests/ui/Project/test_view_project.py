@@ -3,8 +3,7 @@ from pages.client_page import ClientPage
 
 
 avatar_url = "https://demo.growcrm.io/storage/avatars/system/default_avatar.jpg"
-def test_view_project(auth_context):
-    page = auth_context
+def test_view_project(page):
     project_page = ProjectPage(page)
     client_page = ClientPage(page)
 

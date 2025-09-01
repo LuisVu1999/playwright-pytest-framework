@@ -2,8 +2,7 @@ from pages.task_page import TaskPage
 from datetime import datetime
 
 current_date = datetime.now().strftime("%m-%d-%Y")
-def test_view_task(auth_context):
-    page = auth_context
+def test_view_task(page):
     task_page = TaskPage(page)
 
     task_page.access_task()

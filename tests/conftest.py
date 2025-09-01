@@ -31,7 +31,7 @@ def browser_context():
 
 
 @pytest.fixture(scope="function")
-def page(browser_context):
+def page_logout(browser_context):
     page = browser_context.new_page()
     page.goto("https://demo.growcrm.io/projects")
     yield page
@@ -51,15 +51,17 @@ def pytest_runtest_makereport(item, call):
 @pytest.fixture(scope="session")
 def auth_context():
     # Nếu storage chưa tồn tại, login và lưu
-    if not os.path.exists(STORAGE_FILE):
-        AuthHelper.login_and_save_state()
-
+    AuthHelper.ensure_logged_in()
     with sync_playwright() as p:
         browser = p.chromium.launch(headless = True)
         context = browser.new_context(storage_state=STORAGE_FILE)
-        page = context.new_page()
-        page.goto("https://demo.growcrm.io/home")
-        yield page
-        context.close()
+        yield context
         browser.close()
+
+@pytest.fixture
+def page(auth_context):
+    page = auth_context.new_page()
+    page.goto("https://demo.growcrm.io/projects")
+    yield page
+    page.close()
     

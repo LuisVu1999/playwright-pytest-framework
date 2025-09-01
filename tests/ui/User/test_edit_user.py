@@ -1,8 +1,7 @@
 from pages.login_page import LoginPage
 from pages.user_page import UserPage
 
-def test_edit_user(auth_context):
-    page = auth_context
+def test_edit_user(page):
     user_page = UserPage(page)
     user_page.access_user()
     user_page.create_user("Dellon Inc", "Luis_firstname_ed", "Luis_lastname_ed", "test_abc_ed@abc.com", "0976765654", "QA Engineer")
