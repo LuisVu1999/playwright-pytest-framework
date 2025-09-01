@@ -23,8 +23,8 @@ class AuthHelper:
             page.fill("#password", "")
             page.fill("#password", "growcrm")
             page.click("#loginSubmitButton")
-            time.sleep(3)
-            page.wait_for_selector("//*[@id='topnav-logo-container']/div/a/img[2]")
+            time.sleep(5)
+            #page.wait_for_selector("//*[@id='topnav-logo-container']/div/a/img[2]")
             page.wait_for_url("https://demo.growcrm.io/home", timeout=10000)
 
             # Xóa file cũ nếu có
