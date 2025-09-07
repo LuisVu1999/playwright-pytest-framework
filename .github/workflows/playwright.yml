@@ -42,7 +42,7 @@ jobs:
         run: |
           pytest --env=dev --browser-name=chromium --alluredir=allure-results
           # Nếu muốn song song & retry, bật thêm hai dòng bên dưới
-          pytest --env=dev --browser-name=chromium --alluredir=allure-results -n 3 --reruns 5
+          pytest -v -n 3 --reruns 5 --env=dev --browser-name=chromium --alluredir=allure-results
 
       - name: Upload allure results artifact (retained 7 days)
         uses: actions/upload-artifact@v4

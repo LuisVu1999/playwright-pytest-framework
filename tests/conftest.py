@@ -19,7 +19,7 @@ STORAGE_FILE = Paths.STORAGE_FILE
 def pytest_addoption(parser):
     """Thêm CLI option: chọn env, browser"""
     parser.addoption("--env", action="store", default="dev", help="dev/staging/prod")
-    parser.addoption("--browser", action="store", default="chromium", help="chromium/firefox/webkit")
+    parser.addoption("--browser-name", action="store", default="chromium", help="chromium/firefox/webkit")
 
 @pytest.fixture
 def env_config(request):
@@ -28,7 +28,7 @@ def env_config(request):
 
 @pytest.fixture
 def browser_name(request):
-    return request.config.getoption("--browser")
+    return request.config.getoption("--browser-name")
 
 @pytest.fixture(scope="session")
 def browser_context():
