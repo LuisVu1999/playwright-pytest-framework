@@ -1,0 +1,15 @@
+CSRF token: IjeNZQJyS00nLLbUIgKfO1rGjlgx3xpol65ppLPK
+Create client response: 200 {'server': 'nginx', 'date': 'Sun, 07 Sep 2025 16:19:16 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IlNJWTZwaWpiZWZLL1dtckVYQUE3Rmc9PSIsInZhbHVlIjoieFhRODZhODh1REVJMHdCTE5nN01VSWFSQ0tZSUFsMTRDZTRKYW9mZUQ4RHFBeUx6azV0WDQ0eExNY1lCTS9RTVkrMUdDMkcyNGVvTHRndmZmbE4xYUZITHhpM2tUa3dkTE9mQmh0bDdaeWZlT1JNREdTWWZ6R2RZTENCdTFRblQiLCJtYWMiOiJlMDU0MWU3Y2YxNmY2ZmQ5NTE5ZGMyNWYxZDIzNWViZTBhMWEyOTQ2ZTBhOWViZjUxYjQ5MmMyY2MyNTE4NzRjIiwidGFnIjoiIn0%3D; expires=Wed, 10 Sep 2025 16:19:16 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IjJXUEplcVcvL1pORlVDeTJudVZsVGc9PSIsInZhbHVlIjoiL1JibjBjQXk5SHBzcmFLRkFNczFDVUdFbFh5OWJTWXQxbFIyK3E1YzdUenRZYzFnQVE2R2lTa0ZrUnF3VzNEbkpCMlM1T0JiUFVnT0k1VCtSbWdITU0zQ0RzdGVudko2VjBSNng1eXk1NE9DY0NReS9vMVo1bTNXSFJoRmhHbE4iLCJtYWMiOiI3NDJkMTAyYWEwZDUyZjcwM2UxZDkyYzFlNGY2OWQ3N2I0YjM3ZmVjYjYxYzI4NzAzYWZhYzgzYTI3YmExYmQwIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 37
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //span[@class='dropdown']
+Timeout: Cannot find //a[@data-modal-title='Edit Client'], retry 6/5 
+Timeout: Cannot find //a[@data-modal-title='Edit Client'], retry 6/5 
+Timeout: Cannot find //a[@data-modal-title='Edit Client'], retry 6/5 
+Timeout: Cannot find //a[@data-modal-title='Edit Client'], retry 6/5 
+Timeout: Cannot find //a[@data-modal-title='Edit Client'], retry 6/5 
+CSRF token: IjeNZQJyS00nLLbUIgKfO1rGjlgx3xpol65ppLPK
