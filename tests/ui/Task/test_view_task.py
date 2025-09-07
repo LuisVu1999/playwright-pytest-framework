@@ -1,15 +1,19 @@
 from pages.task_page import TaskPage
 from datetime import datetime
+from helpers.test_data import TestData
 
 current_date = datetime.now().strftime("%m-%d-%Y")
 def test_view_task(page):
     task_page = TaskPage(page)
 
-    task_page.access_task()
-    task_page.create_task("bank", "Luis task title_vi", "1999", "100", "Luis test", "08-12-2025")
+    task_title = TestData.random_title()
+    app = "Mobile banking app development"
 
-    task_page.search_task("Luis task title_vi")
-    task_page.view_task("Luis task title_vi", "Low", "Mobile banking app development", "Dellon Inc",
-                        "Jill", "Edwin", "Luis task title_vi", "Mobile banking app development", "In Progress","Low", "Steven Mallet")
-    task_page.search_task("Luis task title_vi")
+    task_page.access_task()
+    task_page.create_task(app, task_title, "1999", "100", TestData.random_title(), "08-12-2025")
+
+    task_page.search_task(task_title)
+    task_page.view_task(task_title, "Low", app, "Dellon Inc",
+                        task_title, app, "In Progress","Low", "Steven Mallet")
+    task_page.search_task(task_title)
     task_page.delete_task()

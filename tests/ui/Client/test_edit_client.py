@@ -1,10 +1,16 @@
 from pages.client_page import ClientPage
+from helpers.test_data import TestData
 
 def test_edit_client(page):
     client_page = ClientPage(page)
+    # client_id, data = client_fixture
+    # company = data["company"]
+    company_name_created = TestData.random_company()
+    company_name_edited = TestData.random_company()
+
     client_page.access_client()
-    client_page.create_client("Luis_company_edit", "Luis_firstname", "Luis_lastname", "test_abc@abc.com")
-    client_page.search_client("Luis_company_edit")
-    client_page.edit_client("Luis_company_modified")
-    client_page.search_client("Luis_company_modified")
+    client_page.create_client(company_name_created, TestData.random_first_name(),TestData.random_last_name(), TestData.random_email())
+    client_page.search_client(company_name_created)
+    client_page.edit_client(company_name_edited)
+    client_page.search_client(company_name_edited)
     client_page.delete_client()

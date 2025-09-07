@@ -51,7 +51,9 @@ class TemplatePage(BasePage):
     EDIT_BUTTON = "//button[@data-modal-title='Edit Project Template']"
 
     # --- Delete Template ---
-    CLICK_CUSTOM_TEMPLATE_NAME = "//a[contains(text(),'Luis template')]"
+    CLICK_CUSTOM_TEMPLATE_CREATE = "//a[contains(text(),'Luis_template_create')]"
+    # CLICK_CUSTOM_TEMPLATE_DELETE = "//a[contains(text(),'Luis_template_view')]"
+    CLICK_CUSTOM_TEMPLATE_EDIT = "//a[contains(text(),'Luis template_create')]"
     DELETE_BUTTON = "//button[@data-confirm-title='Delete Template']"
     CONFIRM_DELETE = "//button[@class='btn btn-sm btn-outline-danger']"
 
@@ -108,14 +110,14 @@ class TemplatePage(BasePage):
         self.assert_text(self.FILE_TAB, file_tab, "view file tab")
 
     def edit_template(self):
-        self.click(self.CLICK_CUSTOM_TEMPLATE_NAME)
+        self.click(self.CLICK_CUSTOM_TEMPLATE_EDIT)
         self.click(self.EDIT_BUTTON)
         self.click(self.ENABLE_USER_PERMISSION)
         self.click(self.SUBMIT_BUTTON)
         self.wait_for_load_page()
 
     def delete_template(self):
-        self.click(self.CLICK_CUSTOM_TEMPLATE_NAME)
+        self.click(self.CLICK_CUSTOM_TEMPLATE_CREATE)
         self.click(self.DELETE_BUTTON)
         self.click(self.CONFIRM_DELETE)
         self.wait_for_load_page()

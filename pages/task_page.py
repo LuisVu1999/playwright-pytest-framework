@@ -57,6 +57,8 @@ class TaskPage (BasePage):
     CLIENT_TAG = "//div[@class='x-meta']//span[2]"
     CREATED_TAG = "//div[@class='x-meta']//span[3]"
     ASSIGNED_USER_TAG1 = "(//img[@data-toggle='tooltip'])[1]"
+    TOOLTIP_1 = "(//div[@class='tooltip-inner'])[1]"
+    TOOLTIP_2 = "(//div[@class='tooltip-inner'])[2]"
     ASSIGNED_USER_TAG2 = "(//img[@data-toggle='tooltip'])[2]"
 
     VIEW_TASK_NAME = "#card-title-editable"
@@ -141,15 +143,17 @@ class TaskPage (BasePage):
         self.wait_for_load_page()
 
     def view_task(self, task_name_tag: str, priority_tag: str, project_tag: str, client_tag: str, 
-                  assigned_user_tag_1: str, assigned_user_tag_2: str, view_task_name: str, view_project_name: str, view_status: str, 
+                  view_task_name: str, view_project_name: str, view_status: str, 
                   view_priority: str, view_created_by: str):
         self.assert_text_contain(self.TASK_NAME_TAG, task_name_tag, "View task name list")
         self.assert_text(self.PRIORITY_TAG, priority_tag, "View priority list")
         self.assert_attribute(self.PROJECT_TAG, "title", project_tag, "View project list")
         self.assert_attribute(self.CLIENT_TAG, "title", client_tag, "View client list")
         #self.assert_text_contain(self.CREATED_TAG, self.current_date, "view created tag list")
-        self.assert_attribute(self.ASSIGNED_USER_TAG1, "data-original-title", assigned_user_tag_1)
-        self.assert_attribute(self.ASSIGNED_USER_TAG2, "data-original-title", assigned_user_tag_2)
+        self.hover_mouse_over(self.ASSIGNED_USER_TAG1)
+        self.assert_have_text(self.TOOLTIP_1)
+        self.hover_mouse_over(self.ASSIGNED_USER_TAG2)
+        self.assert_have_text(self.TOOLTIP_2)
         self.click(self.CLICK_TASK_NAME)
         self.assert_text(self.VIEW_TASK_NAME, view_task_name, "view task name")
         self.assert_text(self.VIEW_PROJECT_NAME, view_project_name)

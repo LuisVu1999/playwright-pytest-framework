@@ -4,7 +4,7 @@ class AllureHelper():
     @staticmethod
     def attach_screenshot(page, name = "screenshot"):
         allure.attach(
-            page.screenshot(),
+            page.screenshot(full_page=True),
             name=name,
             attachment_type=allure.attachment_type.PNG
         )
@@ -16,4 +16,12 @@ class AllureHelper():
             name=name,
             attachment_type=allure.attachment_type.TEXT
         )
-        
+
+    @staticmethod
+    def attach_video(path, name = "Video"):
+        with open(path, "rb") as f:
+            allure.attach(
+                f.read(),
+                name = name,
+                attachment_type = allure.attachment_type.MP4
+            )

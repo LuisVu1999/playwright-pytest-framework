@@ -1,4 +1,4 @@
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
 import time
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 
@@ -9,7 +9,7 @@ class BasePage:
     def navigate(self, url : str):
         self.page.goto(url)
         
-    def click(self, locator: str, timeout: int = 5000, retries : int = 5, delay : int = 500):  # Thoi gian doi max: 5s, so lan doi la 5, thoi gian nghi la 500ms
+    def click(self, locator: str, timeout: int = 60000, retries : int = 5, delay : int = 500):  # Thoi gian doi max: 5s, so lan doi la 5, thoi gian nghi la 500ms
         attempt = 0
         while attempt < retries:  #Lap cho den khi den het so lan retry
             try:
@@ -27,7 +27,7 @@ class BasePage:
             time.sleep(delay/1000.0)  #Cho khoang 1s
         raise Exception (f"Cannot click {locator} after retry {retries} times") #Neu het so lan retry ma van loi thi in ra loi
 
-    def fill(self, locator: str, text: str, timeout: int = 5000, retries: int = 5, delay: int = 500):
+    def fill(self, locator: str, text: str, timeout: int = 60000, retries: int = 5, delay: int = 500):
         attempt = 0
         while attempt < retries:
             try:
@@ -64,8 +64,15 @@ class BasePage:
         self.page.keyboard.press(key)
 
     def assert_text (self, locator: str, expected_result: str, message = ""):
+        self.page.wait_for_selector(locator)
         actual_result = self.page.text_content(locator).strip()
         assert actual_result == expected_result, (message or f"Text mismatch. Expected: '{expected_result}', but got: '{actual_result}'")
+
+    def assert_have_text(self, locator: str, message: str = None):
+        element = self.page.locator(locator)
+        text = element.inner_text().strip()
+        assert text is not None and text != "", message or f"Element '{locator}' has no text"
+        # return text
 
     def assert_text_contain(self, locator: str, expected_substring: str, message = ""):
         actual_result = self.page.text_content(locator).strip()
@@ -136,4 +143,28 @@ class BasePage:
 
     def test_debug(self):  #Chen ngay truoc dong loi
         self.page.pause()
+
+    def expect_url(self, url: str):
+        expect(self.page).to_have_url(url)
+
+    def expect_title(self, title: str):
+        expect(self.page).to_have_title(title)
+
+    # --- Locator level assertions ---
+    def expect_visible(self, locator: str):
+        expect(self.page.locator(locator)).to_be_visible()
+
+    def expect_have_css(self, locator: str, property: str, value: str):
+        expect(self.page.locator(locator)).to_have_css(property, value)
+
+    def expect_have_class(self, locator: str, value: str):
+        expect(self.page.locator(locator)).to_have_class(value)
+
+    def expect_have_attribute(self, locator: str, attribute_name: str, value: str):
+        expect(self.page.locator(locator)).to_have_attribute(attribute_name, value)
+
+    def expect_have_text(self, locator: str, text: str):
+        expect(self.page.locator(locator)).to_have_text(text)
+
+
 

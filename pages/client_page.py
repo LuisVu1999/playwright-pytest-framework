@@ -39,7 +39,7 @@ class ClientPage(BasePage):
     SELECT_ANOTHER_STATUS = "//li[contains(text(),'Suspended')]"
 
     REQUEST_SUCCESSFULL_MESSAGE = "//div[@class='noty_message']"
-    REQUEST_MESSAGE = "Reqeust has been completed"
+    REQUEST_MESSAGE = "Request has been completed"
 
     def __init__(self, page):
         super().__init__(page)
@@ -76,7 +76,7 @@ class ClientPage(BasePage):
         self.wait_for_load_page()
         self.wait_thread_sleep(2)
         
-    def edit_client(self, company_modified: str):
+    def edit_client(self, company_modified: str, successful_message = "Request has been completed"):
         self.click(self.CLICK_COMPANY_NAME)
         self.click(self.EDIT_CLIENT_ICON)
         self.click(self.EDIT_CLIENT_BUTTON)
@@ -87,6 +87,7 @@ class ClientPage(BasePage):
         self.click(self.SELECT_ANOTHER_STATUS)
         self.click(self.SUBMIT)
         self.wait_for_load_page()
+        self.assert_text_contain(self.REQUEST_SUCCESSFULL_MESSAGE, successful_message)
 
     def search_client(self, company_name: str):
         self.access_client()
