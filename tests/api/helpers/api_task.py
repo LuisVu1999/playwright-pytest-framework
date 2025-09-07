@@ -8,6 +8,7 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "
 sys.path.append(ROOT_DIR)
 from helpers.auth import STORAGE_FILE, AuthHelper
 from config import ConfigUrl
+from helpers.test_data import TestData
 
 URL = ConfigUrl.TASK_URL
 
@@ -23,7 +24,8 @@ def extract_task_id(response_body: str):
     task_id = html_value.split('id="card_task_')[1].split('"')[0]
     return task_id
 
-def api_create_task(page, task_title = "Luis task title_cr"):
+def api_create_task(page, task_title = None):
+        task_title = task_title or TestData.random_title()
         page.goto(URL)
         csrf_token = get_csrf_token(page)
         print("CSRF token:", csrf_token)
@@ -57,8 +59,8 @@ def api_create_task(page, task_title = "Luis task title_cr"):
             print("Không lấy được task_id:", e)
             task_id = None
 
-        # browser.close()
-        return task_id, response
+        data = {"title": task_title }
+        return task_id, response, data
 
 def api_delete_task(page, task_id: str):
         csrf_token = get_csrf_token(page)

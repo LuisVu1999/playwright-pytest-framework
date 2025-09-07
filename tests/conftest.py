@@ -181,9 +181,9 @@ def project_fixture(page):
 
 @pytest.fixture
 def task_fixture(page):
-    task_id, response = api_create_task(page)
+    task_id, response, data = api_create_task(page)
     assert response.ok, "Cannot create task"
-    yield task_id
+    yield task_id, data
     if task_id:
         delete_response = api_delete_task(page, task_id)
     
