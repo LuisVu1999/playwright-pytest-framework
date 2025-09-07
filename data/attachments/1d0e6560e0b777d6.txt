@@ -1,0 +1,24 @@
+CSRF token: WvDJjSa0pa7AwKBE04lyNv932TjEKH4qjbRyg5bf
+Create user response: 200 {'server': 'nginx', 'date': 'Sun, 07 Sep 2025 17:45:59 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IjFxeTFoOXlhUVNKZ0YzbTRBOXkwQ0E9PSIsInZhbHVlIjoiS1VhK2NmTXpZdElmRTA3d2tWSGlQQjc1Zm8rZXU4d2tLT3NtQlQwZ2k1SU8xSVdPV0xMeEVMVUxVZW5LSU9Pc2ZlTVlzR3E4LzExMkZjaTZmeXF3S3V0RUVPSjRDRWxObDRtSmx2MGloQXJMQXZhVzFXUy9wMmZFbGI2cnBqS3YiLCJtYWMiOiJjZTIyZDg0NzJkY2EwODhhYjQwZjUyYzAzYzM3NDJiMDY0MmJhN2RiMzdkMTVjZDZhOGEwOTE3MDU5ODM4MjZkIiwidGFnIjoiIn0%3D; expires=Wed, 10 Sep 2025 17:45:59 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IjI3NmJmZExLUXVIMnJWOHdNcGJYMFE9PSIsInZhbHVlIjoibUV4Tysyc3RWV1lIUzJ1YWVDRFExZkFUU2FUcnZpY0J1TXZ3dUlrL1ZleEpDaU16eXFEbUtVT00zU0tqYTk3V3pHSDVQOUgvbG5FU3BsRmh1ejBYcEpad2svbnFaZkwyZHZUWkYzZlp6bk5WNndYeVJhRmxXdGJoWHNrb2wxT1YiLCJtYWMiOiI0MjA1OTFjNzFmYmM3N2VmZjg2OWUyN2EwNzIyZmM1NGQ3OGFmOWExMDYxMTc5ZjlkNGRiMDI0MTM3ODAyNzIyIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created user_id: 188
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully //a[@href='/users']
+Fill successfully #search_query
+Click successfully //button[@data-modal-title='Edit User']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='first_name']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='last_name']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='email']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='phone']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='position']
+Click successfully //span[@aria-labelledby='select2-timezone-container']
+Click successfully //li[contains(text(),'Europe/Berlin')]
+Click successfully //span[@class='lever switch-col-light-blue']
+Fill successfully #social_twitter
+Fill successfully #social_facebook
+Fill successfully #social_linkedin
+Fill successfully #social_github
+Fill successfully #social_dribble
+Click successfully #commonModalSubmitButton
+CSRF token: WvDJjSa0pa7AwKBE04lyNv932TjEKH4qjbRyg5bf
+Response status: 200

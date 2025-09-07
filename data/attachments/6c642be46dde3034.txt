@@ -1,0 +1,34 @@
+CSRF token: WvDJjSa0pa7AwKBE04lyNv932TjEKH4qjbRyg5bf
+Create client response: 200 {'server': 'nginx', 'date': 'Sun, 07 Sep 2025 17:43:53 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IjZkZzhJQm9WdzJPaUVVVW45d0VDNlE9PSIsInZhbHVlIjoieWpHQ01kOVdtYjBPU3dHQWFGRng1OGUrTzEweTIyQXpjQTV1TkZacDFEYnNZa3JPT1lyK203ekIxbXBadnR2a3lEdlozTkFxdHlsZTVjd25rWWtnTzBMdmM1c0JjMkNhdEJOVXZUUU8vbXhtZW1nM3N6b284Z2FndWZQWW1nQVoiLCJtYWMiOiJmNTQzYmM3MDMyYmE4NzI2MWRlNmUwOTA1ZDMzNjJkNTVkMGU0ZjZjODE0MjQ1NGExOTI2ZjFlMjNlMGQ1Zjg4IiwidGFnIjoiIn0%3D; expires=Wed, 10 Sep 2025 17:43:53 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IkkySko5Wm5qTmxmNHhEOHZ1VUlSRVE9PSIsInZhbHVlIjoiaCs0SjdaMUhBd3BsWjF4eEhpdUFMc25KT0J3VkxNeFNhUVNIb2xTUXZvWWtnL0JPZ1FjenlrbG1SaHJ4THhBdllaN25TUTd2SmdMalVXMHFJc01EUDRINlk1Mzk3REZucEZPWHJPemF5MzA2SXJMYUdZZnZJTEE4aHRpbFRUajQiLCJtYWMiOiIwNDA2OGJhN2M1ZjMxMjIxYzRmMmQ2NDNiMzIyNWI0NzI5MmZiZGRhYzFhZTA3OWEzMjRjZGJjNDUxN2JmMmUyIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 52
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //span[@class='dropdown']
+Click successfully //a[@data-modal-title='Edit Client']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='client_company_name']
+Click successfully //span[@aria-labelledby='select2-client_categoryid-container']
+Click successfully //li[contains(text(),'Content Marketing')]
+Click successfully #select2-client_status-container
+Click successfully //li[contains(text(),'Suspended')]
+Click successfully #commonModalSubmitButton
+CSRF token: WvDJjSa0pa7AwKBE04lyNv932TjEKH4qjbRyg5bf
+CSRF token: WvDJjSa0pa7AwKBE04lyNv932TjEKH4qjbRyg5bf
+Create client response: 200 {'server': 'nginx', 'date': 'Sun, 07 Sep 2025 17:45:16 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6ImJmbFV6bVBqeWVZMFFCTzM0VER6RGc9PSIsInZhbHVlIjoiRk50bVc4d3BLeFVVRGJSQXE2TDM3d2UrUjQzYmpBR0tDdlRreGlla0FWZzh4Ni84RC85QUFLYnhpT3NzcnQzbHpUTm00ZE9QQnlicHBwcE9qNzNFNmY1cjIvK05Ka2pXM2FkY05UV0Q4N1NxUVhjb29RcEtFUnF0QURtUkNpZTciLCJtYWMiOiJiYzIyODg5NzgwYWY0NDhhMWViYjZhNzcwNTFkNGEwYTI1MWFiMTEzMTkyNDcwZDhiYzdiZDlmM2JhMWU1YTdiIiwidGFnIjoiIn0%3D; expires=Wed, 10 Sep 2025 17:45:16 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IklIOXcvTzc2SmxieUd6ZHl3Wnh1aGc9PSIsInZhbHVlIjoiWXlUMGwycFk3aTdYWHRZcjc5bnp5QzZyS1dWbGRFVDlxZVVwYk5oMkdNekZHY0J1a3ppOTRxRE1RdGh4dXQ4aFpZU3VGdXhLZ04zcUljVHFGM3Y0RENkc0JFTk5SRFlrN2Q1cmtyTHphWEdZYm02UDZSSnYyQmVoR2hhT0NaYnIiLCJtYWMiOiI0OGNhYmZlYmEyNTJhMmM4OGI0MDQwMDAxMjRhMzg4MGY5ZmM0NDY1ODNkZTk3MjVkNDM1ZTI4MDYzMThjNWZkIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 55
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //span[@class='dropdown']
+Click successfully //a[@data-modal-title='Edit Client']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='client_company_name']
+Click successfully //span[@aria-labelledby='select2-client_categoryid-container']
+Click successfully //li[contains(text(),'Content Marketing')]
+Click successfully #select2-client_status-container
+Click successfully //li[contains(text(),'Suspended')]
+Click successfully #commonModalSubmitButton
+CSRF token: WvDJjSa0pa7AwKBE04lyNv932TjEKH4qjbRyg5bf

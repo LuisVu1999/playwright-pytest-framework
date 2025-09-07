@@ -1,0 +1,44 @@
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Click successfully //button[@data-action-ajax-loading-target='commonModalBody']
+Click successfully //a[@class='client-type-selector']
+Fill successfully (//input[@id='client_company_name'])[1]
+Fill successfully (//input[@id='first_name'])[1]
+Fill successfully (//input[@id='last_name'])[1]
+Fill successfully (//input[@id='email'])[1]
+Click successfully //span[@aria-labelledby='select2-project_template_selector-container']
+Click successfully //li[contains(text(),'Logo Design Template')]
+Fill successfully #project_title
+Click successfully //*[@id='js-projects-modal-add-edit']/div/div[11]/div[2]/div/label/span
+Click successfully //label[@for='project_progress_manually']
+Click successfully #commonModalSubmitButton
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Fill successfully #search_query
+Failed for click //button[@data-confirm-title='Delete Item'] : Locator.click: Error: strict mode violation: locator("//button[@data-confirm-title='Delete Item']") resolved to 17 elements:
+    1) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/63" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_63").get_by_role("button", name="")
+    2) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/55" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_55").get_by_role("button", name="")
+    3) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/50" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_50").get_by_role("button", name="")
+    4) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/78" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_78").get_by_role("button", name="")
+    5) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/77" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_77").get_by_role("button", name="")
+    6) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/62" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_62").get_by_role("button", name="")
+    7) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/61" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_61").get_by_role("button", name="")
+    8) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/60" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_60").get_by_role("button", name="")
+    9) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/59" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_59").get_by_role("button", name="")
+    10) <button title="" type="button" data-ajax-type="DELETE" data-original-title="Delete" data-confirm-title="Delete Item" data-confirm-text="Are you sure?" data-url="https://demo.growcrm.io/projects/58" class="data-toggle-action-tooltip btn btn-outline-danger btn-circle btn-sm confirm-action-danger">…</button> aka locator("#project_58").get_by_role("button", name="")
+    ...
+
+Call log:
+  - waiting for locator("//button[@data-confirm-title='Delete Item']")
+, retry 6/5
+Click successfully //button[@data-confirm-title='Delete Item']
+Click successfully //button[@class='btn btn-sm btn-outline-danger']
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //button[@data-confirm-title='Delete Item']
+Click successfully //button[@class='btn btn-sm btn-outline-danger']
