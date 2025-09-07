@@ -188,5 +188,5 @@ def task_fixture(page):
         delete_response = api_delete_task(page, task_id)
     
 def pytest_runtest_teardown(item, nextitem):
-    time.sleep(3)
+    time.sleep(2)
 
