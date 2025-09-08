@@ -21,6 +21,7 @@ This repository contains a **modular automation framework** built with **Python,
 
 🔗 **Live Demo Report** → [Allure Report on GitHub Pages](https://luisvu1999.github.io/playwright-pytest-framework/)
 
+## Change logs
 ---
 
 ## ⚙️ Tech Stack
