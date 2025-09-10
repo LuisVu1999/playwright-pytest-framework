@@ -27,3 +27,15 @@ class TestData:
     @staticmethod
     def random_title():
         return f"Title_{faker.word()}"
+    
+    @staticmethod
+    def random_date_time():
+        return faker.date_this_year().isoformat()
+    
+    @staticmethod
+    def random_boolean():
+        return faker.boolean()
+    
+    @staticmethod
+    def random_int():
+        return faker.random_int(min=50, max = 500)
