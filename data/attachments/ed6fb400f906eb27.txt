@@ -1,0 +1,17 @@
+CSRF token: HOSCRyxRVLgSCVfCT93RKxoF3vrpA9Wj23qAkPgc
+Create project response: 200 {'server': 'nginx', 'date': 'Wed, 10 Sep 2025 18:19:31 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IlVsR3JXTDBob1FYamx6R3diK0kxNkE9PSIsInZhbHVlIjoiNmxXUS9rVExBeVV0Tkt1Y0tOeHJpQ2dQYVRDNnhSUisyTUlseTlTVjZlQXF2K212VzY2Vk5LTUdPcGdNWVMzWGFxUHlFK0RwQVk2cVBQWGI4NHZkUlV0Y1VjZlRMZmZNbDREczI2QW5aemNBb0N1bVF1Z0dyZWRNcFg0NmxINEciLCJtYWMiOiI4YzllODdiYjczNzcyYzUyNjMzODFhN2NhZjI0ZWQwMGNmOGE3ODVlY2NkNDhmZmRmODc2Mjk3MmZlOTBlYmRlIiwidGFnIjoiIn0%3D; expires=Sat, 13 Sep 2025 18:19:31 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6Ik5ocGNTcVcxZkQyZ3hsS2FwSmRrT3c9PSIsInZhbHVlIjoiOGJUN1V1b2U5QWpydDB4RFFjYXkzUTZUVDZiT3Z6eWEwMHhzcHh5T0ZGcVBuMnFkSnBsY3paTWI1OXhTMWVObmR0eXJxbGN2VFZNTEhBUFQzdG1EaDNuWlEySVJBNUJOT3VlZ1FYTjd2cCs2L043SHBkWjlOWDNObHpxTUtuUzQiLCJtYWMiOiJmZGVhMzc2YTk0MGNkMDZmZmFmN2M0ZWNhNjMwYzU1ZWFlN2NkMGE5OGUyZjY2NDM0OGNjZjg2YzYwY2I3MTFiIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Không lấy được project_id: 'dom_html'
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Fill successfully #search_query
+Click successfully //button[@data-modal-title='Edit Project']
+Fill successfully #project_title
+Click successfully #commonModalSubmitButton
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //button[@data-confirm-title='Delete Item']
+Click successfully //button[@class='btn btn-sm btn-outline-danger']
