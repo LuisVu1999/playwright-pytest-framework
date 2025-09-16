@@ -1,9 +1,0 @@
-CSRF token: HOSCRyxRVLgSCVfCT93RKxoF3vrpA9Wj23qAkPgc
-Create client response: 200 {'server': 'nginx', 'date': 'Wed, 10 Sep 2025 18:19:01 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IlRPcjZTNTczbDdzTEcya2JKS0FpdXc9PSIsInZhbHVlIjoiYmlJdzFPM3U2TUN1MGtNblBWWm84MnhKQ3BkZTloUHNHYnYycDZpTkZNYTYxZi9CYXBhZ2tZcVN1VS8zL2F4S25UdG5FbG1wcXd4RTJMOFVQSkFXR2ZyRHBLRXZrSks4MktpS29NS3NPa3ROazcwd1JSYk5CT2lsYXpHekdBdzYiLCJtYWMiOiIxODY2YTY5MTY5MmU5MDBkYThlMGQ5NDE0MDc2Y2U1MDdjMjFjNDEzN2VmNGI1ODQyMTJlZjBlZTdiYTMwNDliIiwidGFnIjoiIn0%3D; expires=Sat, 13 Sep 2025 18:19:01 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6ImJPUnZhV1UydVpEblFNZHppK2N3SlE9PSIsInZhbHVlIjoiK25sZDhYQ3lJYk5VYzRZQUJTVnVxYWMrQTBsQ1VqMEtsZVJxS0ZaeEtZdHlOb01oUGJLRVBLOFlpZFltckE0V0tBMWQyclpjdVVKUUU5Qm9UbVFGOGVkQXJRV0lQMHYzMDhadUlFTUxDUHNIYjduemU4OG5BS2dCeU9ISCtBVWUiLCJtYWMiOiI1YmMzMDM5MjAxZTBlOTFjNmIzNTYyZDVjNTcyZWM3MWU4NjVhYTk4ZGQ2OGVmYjdhMjhlZjBkYTE2NDA4ZjAxIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
-Created client_id: 36
-Click successfully //I[@class='ti-home']
-Click successfully //li[@data-modular-id='main_menu_team_clients']
-Click successfully #submenu_clients
-Fill successfully #search_query
-Click successfully //tbody//tr[1]//td[2]
-CSRF token: HOSCRyxRVLgSCVfCT93RKxoF3vrpA9Wj23qAkPgc
