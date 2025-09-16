@@ -5,6 +5,9 @@ class ProjectLocator:
 
     # Create Projects
     CREATE_BUTTON = "//button[@data-action-ajax-loading-target='commonModalBody']"
+    CLIENT_DROPDOWN = "//span[@aria-labelledby='select2-project_clientid-container']"
+    SEARCH_CLIENT = "//span[@class='select2-search select2-search--dropdown']//input"
+    SELECT_CLIENT = "//ul[@role='tree']//li[1]"
     NEW_CLIENT = "//a[@class='client-type-selector']"
     COMPANY_NAME = "(//input[@id='client_company_name'])[1]"
     FIRST_NAME = "(//input[@id='first_name'])[1]"

@@ -8,7 +8,7 @@ def test_view_task(page):
 
     # task_id, data = task_fixture
     # task_title = data["title"]
-    task_title = TestData.random_title()
+    task_title = f"018_Title{TestData.random_title()}"
     app = "Mobile banking app development"
 
     task_page.access_task()

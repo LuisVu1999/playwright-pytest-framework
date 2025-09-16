@@ -58,7 +58,7 @@ class TaskLocator:
     ASSIGNED_USER_TAG2 = "(//img[@data-toggle='tooltip'])[2]"
 
     VIEW_TASK_NAME = "#card-title-editable"
-    VIEW_PROJECT_NAME = "#card-task-milestone-title"
+    VIEW_PROJECT_NAME = "//small[@id='card-task-milestone-title']//a"
     VIEW_STATUS = "#card-task-status-text"
     VIEW_PRIORITY = "#card-task-priority-text"
     VIEW_CREATED_BY = "//table[@class='table table-bordered table-sm']//tbody//tr[2]//td[2]//strong"

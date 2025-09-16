@@ -6,7 +6,7 @@ def test_edit_task(page):
 
     # task_id, data = task_fixture
     # task_title = data["title"]
-    task_title_created = TestData.random_title()
+    task_title_created = f"019_Title{TestData.random_title()}"
     task_title_modified = f"{TestData.random_title()}_modified"
 
     task_page.access_task()

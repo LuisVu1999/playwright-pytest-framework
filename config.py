@@ -16,7 +16,7 @@ class Credentials:
 # 3. Browser Settings
 class BrowserConfig:
     HEADLESS = True
-    DEFAULT_TIMEOUT = 60000
+    DEFAULT_TIMEOUT = 90000
     VIEWPORT = {"width": 1920, "height": 1080}
 
 # 4. API Config (nếu có test API)

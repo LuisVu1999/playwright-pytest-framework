@@ -23,12 +23,12 @@ class ClientPage(BasePage):
 
     def view_client(self, client_page_title: str, logo: str, client_name: str, account_owner: str, view_category: str, account_status: str):
         self.click(ClientLocator.CLICK_COMPANY_NAME)
-        self.assert_text(ClientLocator.CLIENT_PAGE_TITLE, client_page_title, "view client title")
-        self.assert_text(ClientLocator.CLIENT_LOGO, logo, "view logo")
-        self.assert_text(ClientLocator.CLIENT_NAME, client_name, "view client name")
-        self.assert_text(ClientLocator.ACCOUNT_OWNER, account_owner, "view account owner")
-        self.assert_text(ClientLocator.CATEGORY_VIEW, view_category, "view category")
-        self.assert_text(ClientLocator.ACCOUNT_STATUS, account_status, "view account status")
+        self.assert_text(ClientLocator.CLIENT_PAGE_TITLE, client_page_title)
+        self.assert_text(ClientLocator.CLIENT_LOGO, logo)
+        self.assert_text(ClientLocator.CLIENT_NAME, client_name)
+        self.assert_text(ClientLocator.ACCOUNT_OWNER, account_owner)
+        self.assert_text(ClientLocator.CATEGORY_VIEW, view_category)
+        self.assert_text(ClientLocator.ACCOUNT_STATUS, account_status)
 
     def delete_client(self):
         self.click(ClientLocator.CLICK_COMPANY_NAME)
@@ -52,5 +52,7 @@ class ClientPage(BasePage):
 
     def search_client(self, company_name: str):
         self.access_client()
+        self.wait_for_load_page()
+        self.wait_thread_sleep(4)
         self.fill(ClientLocator.SEARCH, company_name)
         self.wait_thread_sleep(4)

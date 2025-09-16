@@ -26,16 +26,35 @@ class ProjectPage(BasePage):
         self.click(ProjectLocator.SUBMIT_BUTTON)
         self.wait_for_load_page()
 
+    def create_project_existing_client(self, company_name: str, project_title: str, 
+                       start_date: str, deadline_date: str, target_value: int):
+        self.click(ProjectLocator.CREATE_BUTTON)
+        self.click(ProjectLocator.CLIENT_DROPDOWN)
+        self.fill(ProjectLocator.SEARCH_CLIENT, company_name)
+        self.click(ProjectLocator.SELECT_CLIENT)
+        self.click(ProjectLocator.CLICK_TEMPLATE)
+        self.click(ProjectLocator.SELECT_LOGO)
+        self.fill(ProjectLocator.PROJECT_TITLE, project_title)
+        self.type_text(ProjectLocator.START_DATE, start_date)
+        self.keyboard("Enter")
+        self.type_text(ProjectLocator.DEADLINE_DATE, deadline_date)
+        self.keyboard("Enter")
+        self.click(ProjectLocator.ENABLE_PROGRESS)
+        self.click(ProjectLocator.CHECK_MANUALLY)
+        self.drag_slider_with_keys(ProjectLocator.SLIDER, target_value)
+        self.click(ProjectLocator.SUBMIT_BUTTON)
+        self.wait_for_load_page()
+
     def view_project(self, manually_process: str, progress: str, company_name: str, expected_avt: str, expected_avt_tooltip: str, start_date: str, due_date: str):
         self.click(ProjectLocator.CLICK_PROJECT_NAME)
-        self.assert_text(ProjectLocator.VIEW_MANUALLY_PROGRESS, manually_process, "view manual process")
-        self.assert_text(ProjectLocator.VIEW_PROGRESS_TEXT, progress, "view process")
-        self.assert_text(ProjectLocator.VIEW_COMPANY_NAME, company_name, "view company name")
+        self.assert_text(ProjectLocator.VIEW_MANUALLY_PROGRESS, manually_process)
+        self.assert_text(ProjectLocator.VIEW_PROGRESS_TEXT, progress)
+        self.assert_text(ProjectLocator.VIEW_COMPANY_NAME, company_name)
         self.assert_attribute(ProjectLocator.VIEW_AVT, "src", expected_avt, "view avt")
         self.hover_mouse_over(ProjectLocator.VIEW_AVT)
         self.assert_attribute(ProjectLocator.VIEW_AVT_TOOLTIP, "data-original-title", expected_avt_tooltip, "view avt tooltip")
-        self.assert_text(ProjectLocator.VIEW_START_DATE, start_date, "view start date")
-        self.assert_text(ProjectLocator.VIEW_DUE_DATE, due_date, "view due date")
+        self.assert_text(ProjectLocator.VIEW_START_DATE, start_date)
+        self.assert_text(ProjectLocator.VIEW_DUE_DATE, due_date)
 
     def edit_project(self, project_title_modified: str, start_date_modified: str, deadline_date_modified: str):
         self.click(ProjectLocator.EDIT_BUTTON)
@@ -62,5 +81,7 @@ class ProjectPage(BasePage):
 
     def search_project(self, project_name: str):
         self.access_project()
+        self.wait_for_load_page()
+        self.wait_thread_sleep(4)
         self.fill(ProjectLocator.SEARCH_PROJECT, project_name)
         self.wait_thread_sleep(4)

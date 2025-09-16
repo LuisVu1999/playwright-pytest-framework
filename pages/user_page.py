@@ -36,14 +36,15 @@ class UserPage(BasePage):
         print(f"Expected: '{current_date}'")
         actual = self.page.locator(UserLocator.VIEW_LAST_SEEN).inner_text()
         print(f"Actual: '{actual}'")
-        self.assert_visible(UserLocator.VIEW_AVATAR, "view avatar")
-        self.assert_text(UserLocator.VIEW_USER_NAME, expected_name, "view user name")
-        self.assert_text(UserLocator.VIEW_EMAIL, expected_email, "view email")
-        self.assert_text(UserLocator.VIEW_USER_TEXT, expected_user_text, "view user text")
-        self.assert_text(UserLocator.VIEW_PHONE, expected_phone, "view phone")
-        self.assert_text(UserLocator.VIEW_JOB_TITLE, expected_job_title, "view job title")
+        self.wait_thread_sleep(4)
+        self.assert_visible(UserLocator.VIEW_AVATAR)
+        self.assert_text(UserLocator.VIEW_USER_NAME, expected_name)
+        self.assert_text(UserLocator.VIEW_EMAIL, expected_email)
+        self.assert_text(UserLocator.VIEW_USER_TEXT, expected_user_text)
+        self.assert_text(UserLocator.VIEW_PHONE, expected_phone)
+        self.assert_text(UserLocator.VIEW_JOB_TITLE, expected_job_title)
         #self.assert_text(self.VIEW_DATE, expected_date, "view added date")
-        self.assert_text(UserLocator.VIEW_LAST_SEEN, expected_last_seen, "view last seen")
+        self.assert_text(UserLocator.VIEW_LAST_SEEN, expected_last_seen)
         self.click(UserLocator.CLOSE_BUTTON)
 
     def edit_user(self, first_name_modified: str, last_name_modified: str, email_modified: str, 
@@ -73,5 +74,7 @@ class UserPage(BasePage):
 
     def search_user(self, company_name : str):
         self.access_user()
+        self.wait_for_load_page()
+        self.wait_thread_sleep(4)
         self.fill(UserLocator.SEARCH, company_name)
         self.wait_thread_sleep(4)
