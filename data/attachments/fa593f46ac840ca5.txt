@@ -1,0 +1,13 @@
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf
+Create user response: 200 {'server': 'nginx', 'date': 'Tue, 16 Sep 2025 16:48:11 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IkZ6SE5YL1E5OVlVZGF5TG9NSDk3ekE9PSIsInZhbHVlIjoiVmordlZLWFAzd3YwdzZOUTJVdkpTOWRxVUUvaWxGbFNQK0I3WUtpQ01QclljZmlpS3FGUVVDQjZlQ0ZVbEVmTzZETXlrRkJGeWtOdmp0N1pnTUQ4RjBrL1JKU0F5WUdnTmpZbFpQMlM3ZG1wT0ttdldDcXhtWHpIQmNJL2p6SGIiLCJtYWMiOiJhMjQ4YTg5MDAxM2YwZWY5ZDVhNGYyYTI5ODk0YTgwNTA1MDJhM2JlYTUyOTFjMjM4Y2I5M2NhNDUwMGU0MGJiIiwidGFnIjoiIn0%3D; expires=Fri, 19 Sep 2025 16:48:11 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6Ikx5TE9WZUUvU2c3VDFCblllRnRIMnc9PSIsInZhbHVlIjoibktzNTVCLzFBS0dQUkRISXlvSnFSNkZpa0ZLRWxSdlFsZmR1NzRsZnliZENDMTd6TEREa2huTVRERTRDaEIzTnFhTUZKbHovM0pjKzhFRXhlRURwSnU5MEQ4Q04rMS84U3FmOVA2NmhUZHdBVFZSM2xRc0ZYZUNIUWFoK1NJRXIiLCJtYWMiOiI4NTE2NzNhZWQwYjNiODIwYjA1ZGVmYWVjNjM3MDg1M2YyNDQ1YmFhMjJlYmQ1ZWMwZGNhNDU5YzYwMzNkNWU1IiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created user_id: 176
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully //a[@href='/users']
+Fill successfully #search_query with text 'craig50@luisxyz.com'
+Click successfully //tbody[@id='contacts-td-container']//tr[1]//td[2]
+Expected: '09-16-2025'
+Actual: '---'
+Click successfully #commonModalExtraCloseIcon
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf
+Response status: 200

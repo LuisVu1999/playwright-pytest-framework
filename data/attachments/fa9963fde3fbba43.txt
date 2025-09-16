@@ -1,0 +1,9 @@
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf
+Create client response: 200 {'server': 'nginx', 'date': 'Tue, 16 Sep 2025 16:45:31 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IjZuSFZpUXJTWmRTbm9TaGx6R0VjZ3c9PSIsInZhbHVlIjoiVVQxV1dOTGhYa21KNHdLUFpPVDZyVndHVmlmUnBiVEIvRk9uQ1AxV2M2eTIvQnpEOWQ0TnBRS0hsWDBjaCtqbDJUQlVqT051T0Y2Z2N3cC94bnQyeUFLVEhzNlFMTXRXRTQ5RllTU1JnVEJuSExxRWxqRkpFQkR6U0Zpc3F4S2MiLCJtYWMiOiJlYjZlNWZhNDc4Nzc0ZWZlYTEwNzg2NGFkMzMyYTY0ZmZlYjU2OTk4NmUwZDQ4OGM2ZjFiYjgxMjFlZGNlMzc2IiwidGFnIjoiIn0%3D; expires=Fri, 19 Sep 2025 16:45:31 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6ImlUT3JIUDJVYWlmYmpnLzd2eDN2Znc9PSIsInZhbHVlIjoiYm03ZGlnT2xsbHFNY1lrb092dThBaDI0Z0JoMmlsczhPOEVSVzJPdER3Ymx0TVI3b0ZxL2szU256Q3JBcUV0TmZRV0NmUFRYbXNGdnJXdENLVWk2UlFyV3dld1pvWnVyS2hxM2lHTjU3NEpjRzhhakd5WTFOS2FUd01qOGhhZloiLCJtYWMiOiJmNzAzOTcxMGFjZDBiZWFmNjBjYmVkOGFjNDZlMjI0MzllN2ZkZmJkNGRjM2Q1MDMzMjVhYWQ0Y2ZiMmY4NDY2IiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 45
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query with text 'Hernandez-Davidson'
+Click successfully //tbody//tr[1]//td[2]
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf

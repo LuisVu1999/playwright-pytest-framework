@@ -1,0 +1,24 @@
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf
+Create client response: 200 {'server': 'nginx', 'date': 'Tue, 16 Sep 2025 16:46:27 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6InpnTUwwVTQ4N21iZ1RuUDhlZ1hRK1E9PSIsInZhbHVlIjoiZ0V5aGdKUGVQNWVqMXVpUEFkS3ZacE41OTBEOUZNY0thWkwweGliaVI0RGZZZUNlVmFKZFYrUWdCb1JKcmRFU2tKQm1mc3Z0RXhHeitSRUZnRVBmQnM1bVUxQWN4SzkrMHdHdGtZakFZcXk2YlJGdE5mcjN5YlZ0WE1ONHVEK1UiLCJtYWMiOiIxYmJmYTAxMGJmNzE2ZDg4OGFmYzYwZGRhNGNhMGJkMWVkYzBhYjgxM2U4YTA0MzAzNjFhZDhhNjIxYzVmOTJmIiwidGFnIjoiIn0%3D; expires=Fri, 19 Sep 2025 16:46:27 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IjBhOU1oWEhObGdvSkhEMGZiVm1xcUE9PSIsInZhbHVlIjoiQjBUejN3OWpDQzlSdlhGajVDcjFHK2RJeEM1TTd5bFZrSG54STVpVmMzbzJuMWJJS0UrUXFROGYwWEFQQXpmaFViUGtCZEYwcFZDZW5HMnJIbnJjRGh1NVRiWlBmWloyTSsrYVI1K3ZBNW1ENDVEL2pVV2daVkRZOXFRdy91TG4iLCJtYWMiOiIxMjhiMzY1ZjEwMzhjZDkxMWUzOGMyZmMyODc1NGVmZmVlMzIyZjA4ZGZlYTdhMDkxZGJlYzZhYzc1MWM3YmM3IiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 49
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Click successfully //button[@data-action-ajax-loading-target='commonModalBody']
+Click successfully //span[@aria-labelledby='select2-project_clientid-container']
+Fill successfully //span[@class='select2-search select2-search--dropdown']//input with text 'Pitts PLC'
+Click successfully //ul[@role='tree']//li[1]
+Click successfully //span[@aria-labelledby='select2-project_template_selector-container']
+Click successfully //li[contains(text(),'Logo Design Template')]
+Fill successfully #project_title with text 'Titile916_Title_into'
+Click successfully //*[@id='js-projects-modal-add-edit']/div/div[11]/div[2]/div/label/span
+Click successfully //label[@for='project_progress_manually']
+Click successfully #commonModalSubmitButton
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Fill successfully #search_query with text 'Titile916_Title_into'
+Click successfully //button[@data-modal-title='Edit Project']
+Fill successfully #project_title with text 'Titile917_Title_myself'
+Click successfully #commonModalSubmitButton
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf

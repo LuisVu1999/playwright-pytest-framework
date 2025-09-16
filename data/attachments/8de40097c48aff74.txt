@@ -1,0 +1,17 @@
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf
+Create client response: 200 {'server': 'nginx', 'date': 'Tue, 16 Sep 2025 16:45:58 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IjdnaXVucGpKWk1NMnhDWEtieWhHZnc9PSIsInZhbHVlIjoiQTczSWFIUGJFd3ZEaDE0aCtIZGVhVUl3dWFmUDMxRUl4dXZwME9kM3VyU0pveUQ0WnpSNE1DaForVGVkallIeE40MXhzMG1tdCtwL3Zwa2lFcDhka2ozWGZyWms1SENPMHpRNFJqTWxiNWZHSXdwTU1QelZQU1c5RUZOajlrUlAiLCJtYWMiOiI1OGNmNjA1ZGE1NDllZWUwMGYzNzQzOWEzNzgyY2FiMjM3Mzg4MWI3MTYxM2JkNTc4YWY5MmUyZGIyNGYyMTI3IiwidGFnIjoiIn0%3D; expires=Fri, 19 Sep 2025 16:45:58 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6Im8zWFJremVxU3lRYlRQYTNHaE53QkE9PSIsInZhbHVlIjoiUzFFWHk3WmhxaHVkY3UreUlHL0VHV1QxZ3YyOTNEZG03alNnYnFDczNoU25xTUxTOTNLbmlZS2hoQWtRN3FXQTZwNU9FcEZpUTRIRTMrbTA4UHNaclI1Mk5lQVJWVzdLZEVmVjkxTEw1blRNRXppTUZyejBKY0NTSkNaYjRnSXUiLCJtYWMiOiI2YzcwOWEyNWQwZWMyNGNiNzJkNTkyNmZhZTcyNWIyYTVhZDQ5NTk2MTc0ZDVjNGZiMGJiNjk4MzYxNzFlZjg3IiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 48
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query with text 'Craig Group'
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //span[@class='dropdown']
+Click successfully //a[@data-modal-title='Edit Client']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='client_company_name'] with text 'Nguyen-Lee'
+Click successfully //span[@aria-labelledby='select2-client_categoryid-container']
+Click successfully //li[contains(text(),'Content Marketing')]
+Click successfully #select2-client_status-container
+Click successfully //li[contains(text(),'Suspended')]
+Click successfully #commonModalSubmitButton
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf

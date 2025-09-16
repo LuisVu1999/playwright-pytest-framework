@@ -1,0 +1,12 @@
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf
+Create template response: 200 {'server': 'nginx', 'date': 'Tue, 16 Sep 2025 16:47:50 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IjFkSmhZdUtndy9oT2hPOGVMejYvakE9PSIsInZhbHVlIjoiMXBtcThzSjM3OFZFTXUrc3dTVTlGUjQzMmdRT0cwb3daV1hKWWd2cnkrVEhnYU1PcTNObytCMGtycWs0dnI5T1Zmc0QxVDYxdzFkWlEwcFBocEF5emFYY296c3lUU3QzcFkwMVdtTUIvNUpCY1ZvMXVtczM1MzJLMUhWY1JwTHoiLCJtYWMiOiJjYzRlYjg5ZGZhYzI1MjdlMzhjYzExODg0N2JlZmM0OWFkZTQ2NzU3Mzc4MjY4ZjgyOWEzOWQ2ZTdiNGE5MTFhIiwidGFnIjoiIn0%3D; expires=Fri, 19 Sep 2025 16:47:50 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6ImxNZ0RiSmk5ejc1clZGTEdQNFphQXc9PSIsInZhbHVlIjoiM2ljNmVkRzNGQWJESTFvVjNlQkc0TUhxMVE1Zm00SzZ6NWsxL1BOVlBsSTZ1Z21hcXNxMXBSRDd6SVRNYVlPcW9udE1yRVl4WWRYWmlIZGZWYUJsOUF6RmYyQnZ1ZTlxTjZCSXpibFkwOXdxWHgzckNrTlpuNXhTZzh5Q3pMa1QiLCJtYWMiOiIzMTQ3ZGMwM2I4YzZhMTU2MGJlOTY5MGIxM2JlZGE5ODE4NzFlOGI3Njc5ZDJjOGExNDdjOWM3NmY2YzM1YTA4IiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created template_id: -1758041270
+Click successfully //i[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully //a[@href='https://demo.growcrm.io/templates/projects']
+Click successfully //a[contains(text(),'Luis template_create')]
+Click successfully //button[@data-modal-title='Edit Project Template']
+Click successfully (//span[@class='lever switch-col-light-blue'])[2]
+Click successfully #commonModalSubmitButton
+CSRF token: BSnD3Jr7viRU9jiVE60G7YVoGNbnAPPkglRVfaBf
+Response status: 200
