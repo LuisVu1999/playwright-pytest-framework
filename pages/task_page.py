@@ -77,11 +77,11 @@ class TaskPage (BasePage):
         self.wait_for_load_page()
 
     def search_task(self, task_title: str):
-        self.access_task
+        self.access_task()
         self.wait_for_load_page()
         self.wait_thread_sleep(4)
         self.fill(TaskLocator.SEARCH, task_title)
-        self.wait_thread_sleep(4)
+        self.wait_thread_sleep(6)
 
     def edit_task(self, task_title_modified: str, comment: str, item_name: str, ):
         self.click(TaskLocator.TASK_NAME_TAG)
