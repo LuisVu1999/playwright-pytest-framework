@@ -126,9 +126,9 @@ playwright-pytest-framework/
 ## 👤 Author
 
 - **Name:** Luis Vu  
-- **📧 Email:** Quyvuduc123456@gmail.com  
-- **🔗 LinkedIn:** [Profile](https://www.linkedin.com/in/vu-luis-b434b21b2/)  
-- **💻 GitHub:** [LuisVu1999](https://github.com/LuisVu1999)  
+- **📧 Email:** luisvu.work@gmail.com  
+- **🔗 LinkedIn:** [Luis Vu](https://www.linkedin.com/in/luisvu99/)  
+- **💻 GitHub:** [LuisVu](https://github.com/LuisVu99)  
 
 ---
 
