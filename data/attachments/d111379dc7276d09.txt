@@ -1,9 +1,0 @@
-CSRF token: UUHltrHFUUR59qr1Q0ozNKSKYa1jTTEB7Zy6yaEg
-Create client response: 200 {'server': 'nginx', 'date': 'Wed, 17 Sep 2025 15:34:18 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IkVRMmZUeUJBRlRsYjE1cVNBNnBiMnc9PSIsInZhbHVlIjoiUEFyMWZkSFMxOHBRcFNsQmVuWmM5eHVaR1NveTN5TXBOYml3UmxKT2ptOW5LYTFFMHBhM0hyRGlQZ1crT0tYUHI2UmhsTUtzdFlBdGRIU3ozeVJ2Z29XSW5Ec3FsQ0hxeXlnb0ZLZ2lVRUxhdTRMN1RoMnRVVmphSTBCSWFIU0oiLCJtYWMiOiI4YjYxZTJkZGFkY2VhNTc0ZjEyN2U5ZjU2ZmEyZTBkOTE5MWRiZTA2NmEyY2ZhNzBkNWU3NjE5M2E0ZTA2MmEzIiwidGFnIjoiIn0%3D; expires=Sat, 20 Sep 2025 15:34:18 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6Ik9OWDMveVVNWEtYK1pZamJoYjdsNEE9PSIsInZhbHVlIjoiUTNVOHZ0ZlpvbFdzNFlqdHR3MlhoaFc5T005VjlML1lUS01VTit3RlV1QWtGVlZMNkFZY1JVbFBLSHN4ZFdvMmFKYlJBQ2xUOTlkY0pxZDFkY1ZhOGhNR0tVMFJqVzBMNGwveXlCTElvSHQrTE1HeTdWV25hNHBCakx2QTA2TnUiLCJtYWMiOiIxYTI3MTk4NDUwZTlkNjgwZDM1Y2M0MTA5OTRmNDQ3YzU3NTg4YmMxYTBhN2M3YWU2MzFhNjVhNjllMTUxMjIxIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
-Created client_id: 37
-Click successfully //I[@class='ti-home']
-Click successfully //li[@data-modular-id='main_menu_team_clients']
-Click successfully #submenu_clients
-Fill successfully #search_query with text 'Greene, Cobb and Wells'
-Click successfully //tbody//tr[1]//td[2]
-CSRF token: UUHltrHFUUR59qr1Q0ozNKSKYa1jTTEB7Zy6yaEg
