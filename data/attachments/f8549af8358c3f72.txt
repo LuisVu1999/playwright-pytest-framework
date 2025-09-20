@@ -1,0 +1,24 @@
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75
+Create client response: 200 {'server': 'nginx', 'date': 'Sat, 20 Sep 2025 07:37:17 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IlhkOC8wN1J2VEtEVjRxbTFoaXNDMWc9PSIsInZhbHVlIjoiK2dFSUFlMzNldGVHTGpEYzVvMXdDV2E1M1dwWXpQelRDUnV0WktXb0ZsSFA4NTEwaDVYajk4U2FnVGdRL09ORnNCenNST2Z6K3F3STlPakZKRi9ZOUtnK3IvYVZIU0dxMktQTnNCbXI0SzRBemNZMGdHcnozT3oreUY2RGpoRFgiLCJtYWMiOiIwODg4ZjFkMTkyZmE3MGNjNzRhMmUyNGE3MmNlNTFlZjJmNTgxNGE5NDdkMWVhNGQ3ZmNlNzRmMzBmOWViMDVlIiwidGFnIjoiIn0%3D; expires=Tue, 23 Sep 2025 07:37:17 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6ImJrdWVsWmFMVDVma2pxR0RYUzhJaHc9PSIsInZhbHVlIjoiQUhBbTVwOVRJbXZzNHl4bEV3QW9ic1VHQk1DZi9QUDU5N0JiQ29BVVVKamtXR25XSEpESGo2dmJlZzR6UUlpaTc2U0VGTkV4dXZnNGczMmUvRXNLdkxGSUpSek1ZMnkzT2l1TGtPbHlmU0hndTY3Vi90UERPRWpvOGNYUE9UbFMiLCJtYWMiOiJhNWU2MTNjN2RmMGJiNWNiNmQ5YzZmYjVhYTFmYmYzNjQ5NzBkMGQwODRmNzhmNmYwMWJlZGQ4NTJkZThlZjJlIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 36
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Click successfully //button[@data-action-ajax-loading-target='commonModalBody']
+Click successfully //span[@aria-labelledby='select2-project_clientid-container']
+Fill successfully //span[@class='select2-search select2-search--dropdown']//input with text 'Sherman, Moyer and Jones'
+Click successfully //ul[@role='tree']//li[1]
+Click successfully //span[@aria-labelledby='select2-project_template_selector-container']
+Click successfully //li[contains(text(),'Logo Design Template')]
+Fill successfully #project_title with text 'Titile916_Title_nearly'
+Click successfully //*[@id='js-projects-modal-add-edit']/div/div[11]/div[2]/div/label/span
+Click successfully //label[@for='project_progress_manually']
+Click successfully #commonModalSubmitButton
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_projects']
+Click successfully #submenu_projects
+Fill successfully #search_query with text 'Titile916_Title_nearly'
+Click successfully //button[@data-modal-title='Edit Project']
+Fill successfully #project_title with text 'Titile917_Title_sure'
+Click successfully #commonModalSubmitButton
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75

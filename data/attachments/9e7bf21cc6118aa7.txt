@@ -1,0 +1,17 @@
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75
+Create client response: 200 {'server': 'nginx', 'date': 'Sat, 20 Sep 2025 07:36:19 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6Ikx2aFo5c3F6ZWo0cSsrcE1rR3Q3TUE9PSIsInZhbHVlIjoibGUrU3Vqb3hGYWI0bUhNRGVjV0ZRRjFCQXIvRG1sbGZUbDByb2hVZ1hsWmk4M2FEU3l5T1B3cnAxcG5zVStYSkxVTTd5Nk03MENtbHFpeEwrTndLQngxVW8zUEJDVXB4WFdBQUgyOFNXRnpLSjNIbW5xV2RhNmtZclFURnY1REIiLCJtYWMiOiJiYTE5M2I1YjYzYzZjMzEyZjMzMWYyZWI5MmZmYmY1NDQ2MjgwMmI1MDg2NDAxMTZlODkzYmExMTNjNWYxZTg1IiwidGFnIjoiIn0%3D; expires=Tue, 23 Sep 2025 07:36:19 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6ImZjdjZqdkdrSFptK204Myt2SDVEMWc9PSIsInZhbHVlIjoiWVltY0xEc2k4YzFrSXYxZGduUG9aM3NjMWJGSmpxMktVczUyQ1F0Z1J2c3pxUWtUbmZhRlpmWHYrQXpYTVJmQkFxbXVhUHIzSEpmcHpWcnhVWGlVa0xzcEUxR1MwbEp5TmdBSVVkTURadVAvVmR2ZTJ0THdqejNpV2I0VEk5NW4iLCJtYWMiOiI5OWVjNmI3MjhhNjliNGM1NDVkYzk1Njc3MzE1ZjBmZjM3NGFhNWUwYTZkMmUyYmY3YWZhZDNiZGY0YWQ3YmMyIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 32
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query with text 'Medina, Irwin and Padilla'
+Click successfully //tbody//tr[1]//td[2]
+Click successfully //span[@class='dropdown']
+Click successfully //a[@data-modal-title='Edit Client']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='client_company_name'] with text 'Medina-Gray'
+Click successfully //span[@aria-labelledby='select2-client_categoryid-container']
+Click successfully //li[contains(text(),'Content Marketing')]
+Click successfully #select2-client_status-container
+Click successfully //li[contains(text(),'Suspended')]
+Click successfully #commonModalSubmitButton
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75

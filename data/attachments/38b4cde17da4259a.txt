@@ -1,0 +1,13 @@
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75
+Create user response: 200 {'server': 'nginx', 'date': 'Sat, 20 Sep 2025 07:39:22 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6ImI3d1d2TzN6dGFFMmY0YzlmcXc3anc9PSIsInZhbHVlIjoiVWM3M0ZmYzR1RkJpNEM4UVhDdVFUZmhFeG5BUEpCc2RTM1ZIdi95QW5FUjQ1ZmEyNlFIaGlrT0V4bzl6ZjNzaUhqZCs2TXZ3Mnd4eDFXeks2Q0JtSVBXS085Ujh4L25kR2tJVExicGVLWDcwUW9QUlZDRmJwNzUvMlA3VnBaSk4iLCJtYWMiOiIxZDgyM2VhNTI5NmQ0MWY5ODE5ZDY4MTdjYzQ3NGMzNmQ3ZTVhMzU1ZDg3YWQ1N2ZlMjU1OGRkMGFhNzc3MjUxIiwidGFnIjoiIn0%3D; expires=Tue, 23 Sep 2025 07:39:22 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IlpDWmNrSFdvRURUZ2V0WEpWZzBXakE9PSIsInZhbHVlIjoiMEthWURCUG9ydUZCaGxWZG1BdDlMMW1jbFN3cXhUcUpPZ0U4dTlIamo1d0ZleThVaCtpd0xYeExBM0JRaUJKa2lWWFBjUzZ4Wmlla05ya0VOSUcwR3QyY3hESy8zWDZDWWp5SHdmbkNDZzI0WTlUbm0rZU5yMG1GL21qMkxtckoiLCJtYWMiOiI2OTA5NjYzNzkwZjBlNGYwNzYyYzY4NGM2NjRhZjI5NzI2YTcwZGI3YmZkMGQ2YmM5OWNhYmE1ZjFlYjMyZjc1IiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created user_id: 157
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully //a[@href='/users']
+Fill successfully #search_query with text 'xbaird@luisxyz.com'
+Click successfully //tbody[@id='contacts-td-container']//tr[1]//td[2]
+Expected: '09-20-2025'
+Actual: '---'
+Click successfully #commonModalExtraCloseIcon
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75
+Response status: 200

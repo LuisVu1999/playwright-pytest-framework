@@ -1,0 +1,9 @@
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75
+Create client response: 200 {'server': 'nginx', 'date': 'Sat, 20 Sep 2025 07:36:42 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6IlRkbFFwallzd09QazBUK3Y4RHk2TUE9PSIsInZhbHVlIjoidVRDclRSTW0yUTYveHNuU3EyOVRrVVM2RlRZeFgvN0ZNUVErUE1penlrZDJ0RXRSdU5OWDdIeElyaGc1R3hEbGNKSU5xdk5JajVpeFFJWUdZWXEzZnIyaUV3UGhyMlBPQXdYZ2tKdlhPWDlWdDlWOEpwNjhsVmt0Zkk0cGRpQ1oiLCJtYWMiOiIwMzU5MDk3ZDE1ZDY5MjNiMzdiYzY2MDIzOTMyZjRlMDBlN2Y5YzIzMTA0OTVjNTI3NGIwMGUxMTJjMTJiZDc0IiwidGFnIjoiIn0%3D; expires=Tue, 23 Sep 2025 07:36:42 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IlJTWFhDZUhjcDdMZnB1Rk9FVU5YcGc9PSIsInZhbHVlIjoiK3lmTUlmN2gvSGVoNUdqR1g5RzFKaUVMWFhkc2dOU3AyU3lGS0RDdlBXbVVBKzVycS9VcGpsUDBTSzl6UVRDUWh5MU5NSUlLd0UrR1pWVjFaS25MZEUxOFRSTHNCOC93QWw4OVN3WDhTc0pYcnpVRC95VnBRNnhnU0tNSFFEdmwiLCJtYWMiOiI0YzIxMTk5NDc1ZDViODJmM2M0ODQ5YzhiNTkxNmIxZjY3ODE4ZjQ4NGU4NmY0ZDExZjY3MDA5ZWQxMTIyZjFjIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 34
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query with text 'Rivera Inc'
+Click successfully //tbody//tr[1]//td[2]
+CSRF token: MWrLfytD9SyG8C4ZarfNLktqZ8z1Uw9fLT8yTd75
