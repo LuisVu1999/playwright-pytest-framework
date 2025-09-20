@@ -1,8 +1,8 @@
 # 🎭 Playwright Pytest Framework
 
-[![CI](https://github.com/LuisVu1999/playwright-pytest-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/LuisVu1999/playwright-pytest-framework/actions/workflows/playwright.yml)
-[![Allure Report](https://img.shields.io/badge/Allure-Report-ED1C24?logo=allure&logoColor=white)](https://luisvu1999.github.io/playwright-pytest-framework/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/vu-luis-b434b21b2/)
+[![CI](https://github.com/LuisVu99/playwright-pytest-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/LuisVu99/playwright-pytest-framework/actions/workflows/playwright.yml)
+[![Allure Report](https://img.shields.io/badge/Allure-Report-ED1C24?logo=allure&logoColor=white)](https://luisvu99.github.io/playwright-pytest-framework/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/luisvu99/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > A **scalable Playwright + Pytest automation framework** for **UI & API testing** with **CI/CD integration** and **Allure reporting**.
