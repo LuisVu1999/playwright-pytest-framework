@@ -1,0 +1,9 @@
+CSRF token: hEWhgxutsqwTcnXUmGujDfY21Nx3qNsbG6OOslSo
+Create client response: 200 {'server': 'nginx', 'date': 'Sat, 20 Sep 2025 03:17:44 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6Ik8ranNDMFFtYjBjRzNxUHlMeXV0dGc9PSIsInZhbHVlIjoiSmY5bkcxNHdLVmtTditrdWE4SnN5UW5JVnVZSVEvUVNCZXpXVTJhQVJ5d1BlWi85dWtaNUZLZ0dMVEZuK2VIY1A3b0wwU1hxdDd2bk9SM2lNeEhkUUk0QVg3eHhiNytqMVZTZ0FNNXlsUzRkOWlHN1A5RGZ5VnZPKzBlSFV3dmUiLCJtYWMiOiJjMjNhZWQ3YjYxYjdmODM0ZGEwYjUzNTQ4N2NmYjlmZTgwMzdlNGQxNGEzMWNmYzljYjRkM2IyN2I5ODg2Yjk0IiwidGFnIjoiIn0%3D; expires=Tue, 23 Sep 2025 03:17:44 GMT; Max-Age=259200; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IktnTVByUzVIZ0FJcWNuRVQrbE1vRnc9PSIsInZhbHVlIjoidmt4SjQ3dnZqM2RiUnlMT0RHbHQ3UDBVT2hOdmpBN3NzZXF3NnhQWnZqc2pVSEVpWXQxQk9UeTlSOHpFM0F0YzhuMmFnZVhMMGRRTUV4dm5jd2ptQlFJZi9reC9CZTBpOW44Z2RERnZXUGdLQThtK3FyYmF1eVl6aURHbWxhQSsiLCJtYWMiOiI2NGM4NzJlMjFlMTNkYTk4MzVkNzNlODhmYTkyZDFiNDhlN2RlOWZkZWEzOTk2MWQ2ZmU4ZjU3OTM3YzQwYjI3IiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created client_id: 35
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully #submenu_clients
+Fill successfully #search_query with text 'Harris PLC'
+Click successfully //tbody//tr[1]//td[2]
+CSRF token: hEWhgxutsqwTcnXUmGujDfY21Nx3qNsbG6OOslSo

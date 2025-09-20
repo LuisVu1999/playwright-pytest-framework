@@ -1,0 +1,24 @@
+CSRF token: hEWhgxutsqwTcnXUmGujDfY21Nx3qNsbG6OOslSo
+Create user response: 200 {'server': 'nginx', 'date': 'Sat, 20 Sep 2025 03:20:52 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'x-powered-by': 'PHP/8.3.25, PleskLin', 'cache-control': 'private, must-revalidate', 'pragma': 'no-cache', 'expires': '-1', 'set-cookie': 'XSRF-TOKEN=eyJpdiI6Ik05aW1ucGM0RE9xQ2I2Yk1vNmZDb2c9PSIsInZhbHVlIjoiek81ZG1IRmxvMDdoYS91cXFKcC9YM0VpQ0xFMHAyZlFyc1ZaeFFHT2p6SW9HVlBEcmFyMW5ic0J6NjdHV2xFMXBYbEIzOGtVU3hQZmhCa2EyMGg1WUdUN29nd0RzcE1SZHhmRCtVWXg5dFM0YncwV3JHMkNsUVZ3alZFMkw2dUYiLCJtYWMiOiJjMTA1MmJjNWE3NTc2Mzk2NjdlMGNhZDJlOGEyZjZkNmM0ZWM5OGE1OWY3YTVlMWI4OTg1MzM1NGY0OTUxODYwIiwidGFnIjoiIn0%3D; expires=Tue, 23 Sep 2025 03:20:51 GMT; Max-Age=259199; path=/; secure; samesite=lax\ncrm_session=eyJpdiI6IkFxK1dlNklKYVdqSzhJdFdqWmpTVFE9PSIsInZhbHVlIjoiMWoxUHJYV1ZVMld6a05zbk1SQ3RYUWo0amVKYXhUVGt3cjM1bkJqbWFQSldKSlFFajVuV3hHZkdmc09EMlVhZlQ1d0NtOW9veXRvV0NxWXNwLy8rd3pHbzY3RnpuclJ1QVF1UHlVNmE2Y3lTMlUzQURwQXNZSUFRZGtNV0cxZy8iLCJtYWMiOiI5MzAxZmM1ODhlMzMyZTUzMDhjMDY2Njc3NmNjY2Y2NjQyZjEyMjBlMTk1OGJjMzFmODllMTRiN2M1ODllYTdjIiwidGFnIjoiIn0%3D; path=/; httponly; samesite=lax', 'content-encoding': 'br'}
+Created user_id: 157
+Click successfully //I[@class='ti-home']
+Click successfully //li[@data-modular-id='main_menu_team_clients']
+Click successfully //a[@href='/users']
+Fill successfully #search_query with text 'rrodriguez@luisxyz.com'
+Click successfully //button[@data-modal-title='Edit User']
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='first_name'] with text '015_titleGeorge'
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='last_name'] with text 'Hart'
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='email'] with text 'jessica58@luisxyz.com'
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='phone'] with text '0976765654'
+Fill successfully //div[@class='col-sm-12 col-lg-9']//input[@id='position'] with text 'QA Engineer_modified'
+Click successfully //span[@aria-labelledby='select2-timezone-container']
+Click successfully //li[contains(text(),'Europe/Berlin')]
+Click successfully //span[@class='lever switch-col-light-blue']
+Fill successfully #social_twitter with text 'Title_everybody'
+Fill successfully #social_facebook with text 'Title_everybody'
+Fill successfully #social_linkedin with text 'Title_everybody'
+Fill successfully #social_github with text 'Title_everybody'
+Fill successfully #social_dribble with text 'Title_everybody'
+Click successfully #commonModalSubmitButton
+CSRF token: hEWhgxutsqwTcnXUmGujDfY21Nx3qNsbG6OOslSo
+Response status: 200
